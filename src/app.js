@@ -1,3 +1,5 @@
+// const fastify = require('fastify')({ logger: true })
+
 const express = require('express');
 const swaggerUI = require('swagger-ui-express');
 const path = require('path');
