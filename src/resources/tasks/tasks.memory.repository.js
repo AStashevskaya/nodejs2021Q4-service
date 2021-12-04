@@ -1,28 +1,42 @@
-const uuid = require('uuid');
+let tasks = [];
 
-class Task {
-  constructor({
-    id = uuid(),
-    title = 'Fix Bugs',
-    order = '1',
-    description = 'Priority',
-    userId = '',
-    boardId = '',
-    columnId = '',
-  } = {}) {
-    this.id = id;
-    this.title = title;
-    this.order = order;
-    this.description = description;
-    this.userId = userId;
-    this.boardId = boardId;
-    this.columnId = columnId;
-  }
+const getAll = async () => tasks;
+const create = async (task) => tasks.push(task);
+const findOneByBoardId = async ({ boardId }) =>
+  tasks.filter((task) => task.boardId === boardId);
+const findById = async ({ id }) => {
+  const tasksDB = await getAll();
+  const task = tasksDB.find((issue) => issue.id === id);
+  return task;
+};
+const updateOne = async ({ id, ...rest }) => {
+  tasks = tasks.map((issue) =>
+    issue.id === id ? { ...issue, ...rest } : issue
+  );
+};
 
-  static toResponse(task) {
-    const { id, title, order, description, userId, columnId, boardId } = task;
-    return { id, title, order, description, userId, columnId, boardId };
-  }
+const deleteAllBoardId = async ( boardId ) => {
+  tasks = tasks.filter(task => task.boardId !== boardId)
 }
 
-module.exports = Task;
+const updateAllUserId = async (userId) => {
+  tasks = tasks.map((task) => task.userId === userId ? { ...task, userId: null } : task);
+};
+
+const deleteOne = async ({ id }) => {
+  const task = tasks.find((el) => el.id === id);
+  console.log('task', task);
+  const taskIdx = tasks.indexOf(task);
+  tasks = tasks.splice(taskIdx, 1);
+};
+
+module.exports = {
+  getAll,
+  create,
+  findOneByBoardId,
+  findById,
+  updateOne,
+  deleteOne,
+  deleteAllBoardId,
+  updateAllUserId,
+};
