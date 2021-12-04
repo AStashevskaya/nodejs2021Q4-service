@@ -1,23 +1,25 @@
 let boards = [];
 
 const getAll = async () => boards;
-const create = async (user) => boards.push(user);
+const create = async (newboard) => boards.push(newboard);
+
 const findOneByLogin = async ({ login }) =>
-  boards.find((user) => user.login === login);
-const findById = async ({ id }) => {
-  const usersDB = await getAll();
-  const user = usersDB.find((person) => person.id === id);
-  return user;
+  boards.find((desk) => desk.login === login);
+
+  const findById = async ({ id }) => {
+  const boardDB = await getAll();
+  const board = boardDB.find((desk) => desk.id === id);
+  return board;
 };
 const updateOne = async ({ id, ...rest }) => {
-  boards = boards.map((person) =>
-    person.id === id ? { ...person, ...rest } : person
+  boards = boards.map((board) =>
+    board.id === id ? { ...board, ...rest } : board
   );
 };
 const deleteOne = async ({ id }) => {
-  const user = boards.find((el) => el.id === id);
-  const userIdx = boards.indexOf(user);
-  boards = boards.splice(userIdx, 1);
+  const board = boards.find((el) => el.id === id);
+  const boardIdx = boards.indexOf(board);
+  boards.splice(boardIdx, 1);
 };
 
 module.exports = {

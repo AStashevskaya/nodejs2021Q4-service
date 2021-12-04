@@ -1,7 +1,7 @@
 const boardsRepo = require('./board.memory.repository');
-const tasksRepo = require('../tasks/tasks.memory.repository')
+const tasksRepo = require('../tasks/tasks.memory.repository');
 const Board = require('./board.model');
-const Column = require('../columns/column.model')
+const Column = require('../columns/column.model');
 
 const getBoards = async (req, reply) => {
   const boards = await boardsRepo.getAll();
@@ -15,23 +15,23 @@ const getBoard = async (req, reply) => {
   try {
     const board = await boardsRepo.findById({ id });
 
-    if (board) {
-      reply.code(200).send(board);
+    if (!board) {
+      throw new Error()
     }
 
-    reply.code(404);
+     reply.code(200).send(board);
   } catch (error) {
-    reply.code(404);
+    reply.code(404).send({ message: 'Not found' });
   }
 };
 
 const addBoard = async (req, reply) => {
   const { columns, title } = req.body;
-  const columnsObj = columns.map(el => new Column(el))
+  const columnsObj = columns.map((el) => new Column(el));
 
   try {
     const newBoard = new Board({ title, columns: columnsObj });
-  
+
     await boardsRepo.create(newBoard);
 
     reply.code(201).send(newBoard);
@@ -58,12 +58,18 @@ const deleteBoard = async (req, reply) => {
   const { boardId: id } = req.params;
 
   try {
+    const board = await boardsRepo.findById({ id });
+
+    if (!board) {
+      throw new Error ({message: 'Such board is not exist'})
+    }
+
     await tasksRepo.deleteAllBoardId(id);
     await boardsRepo.deleteOne({ id });
 
     reply.send('Board deleted');
   } catch (error) {
-    reply.code(404);
+    reply.code(404).send('Not Found');
   }
 };
 

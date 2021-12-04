@@ -60,6 +60,8 @@ const deleteUser = async (req, reply) => {
 
       try {
         await tasksRepo.updateAllUserId(id);
+        // const tasks = await tasksRepo.getAll();
+
         await usersRepo.deleteOne({ id });
 
         reply.send('User deleted');

@@ -58,6 +58,9 @@ const deleteBoardOptions = {
       200: {
         type: 'string',
       },
+      404: {
+        type: 'string',
+      },
     },
   },
   handler: deleteBoard,

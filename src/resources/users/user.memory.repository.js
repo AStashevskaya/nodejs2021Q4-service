@@ -24,7 +24,7 @@ const updateOne = async ({ id, ...rest }) => {
 const deleteOne = async ({ id }) => {
   const user = users.find((el) => el.id === id);
   const userIdx = users.indexOf(user);
-  users = users.splice(userIdx, 1);
+  users.splice(userIdx, 1);
 };
 
 module.exports = {

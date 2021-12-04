@@ -25,9 +25,8 @@ const updateAllUserId = async (userId) => {
 
 const deleteOne = async ({ id }) => {
   const task = tasks.find((el) => el.id === id);
-  console.log('task', task);
   const taskIdx = tasks.indexOf(task);
-  tasks = tasks.splice(taskIdx, 1);
+  tasks.splice(taskIdx, 1);
 };
 
 module.exports = {

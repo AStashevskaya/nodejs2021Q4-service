@@ -60,7 +60,7 @@ const updateTaskOptions = {
   handler: updateTask,
 };
 
-const deleteBoardOptions = {
+const deleteTaskOptions = {
   schema: {
     response: {
       200: {
@@ -81,7 +81,6 @@ const addTaskOptions = {
         'description',
         'userId',
         'boardId',
-        'columnId',
       ],
     },
     response: {
@@ -96,7 +95,7 @@ function TasksRoutes(fastify, options, done) {
   fastify.post('/boards/:boardId/tasks', addTaskOptions);
   fastify.get('/boards/:boardId/tasks/:taskId', getTaskOptions);
   fastify.put('/boards/:boardId/tasks/:taskId', updateTaskOptions);
-  fastify.delete('/boards/:boardId/tasks/:taskId', deleteBoardOptions);
+  fastify.delete('/boards/:boardId/tasks/:taskId', deleteTaskOptions);
 
   done();
 }

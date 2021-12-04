@@ -25,18 +25,18 @@ const getTask = async (req, reply) => {
     const board = await boardsRepo.findById({ id: boardId });
 
     if (!board) {
-      reply.code(404);
+      throw new Error();
     }
 
     const task = await tasksRepo.findById({ id: taskId });
 
-    if (task) {
-      reply.code(200).send(task);
+    if (!task) {
+      throw new Error();
     }
 
-    reply.code(404);
+    reply.code(200).send(task);
   } catch (error) {
-    reply.code(404);
+    reply.code(404).send({ message: 'Not found' });
   }
 };
 
@@ -47,7 +47,7 @@ const addTask = async (req, reply) => {
     const board = await boardsRepo.findById({ id: boardId });
 
     if (!board) {
-      reply.code(404);
+      throw new Error();
     }
 
     const newTask = new Task({ ...req.body, boardId });
@@ -55,12 +55,12 @@ const addTask = async (req, reply) => {
 
     reply.code(201).send(newTask);
   } catch (error) {
-    console.log(error);
+    reply.code(400);
   }
 };
 
 const updateTask = async (req, reply) => {
-    const { taskId } = req.params;
+  const { taskId } = req.params;
 
   try {
     await tasksRepo.updateOne({ taskId, ...req.body });
@@ -74,14 +74,20 @@ const updateTask = async (req, reply) => {
 };
 
 const deleteTask = async (req, reply) => {
-  const { taskId: id } = req.params;
+  const { taskId, boardId } = req.params;
 
   try {
-    await tasksRepo.deleteOne({ id });
+    const board = await boardsRepo.findById({ id: boardId });
+
+    if (!board) {
+      throw new Error();
+    }
+
+    await tasksRepo.deleteOne({ id: taskId });
 
     reply.send('Task deleted');
   } catch (error) {
-    reply.code(404);
+    reply.code(404).send({ message: 'Not found' });
   }
 };
 
