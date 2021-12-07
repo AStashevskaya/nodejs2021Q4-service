@@ -1,10 +1,10 @@
-const {
+import {
   getUsers,
   addUser,
   getUser,
   updateUser,
   deleteUser,
-} = require('./user.service');
+} from './user.service';
 
 const UserSchema = {
   type: 'object',
@@ -105,4 +105,4 @@ function userRoutes(fastify, options, done) {
   done();
 }
 
-module.exports = userRoutes;
+export default userRoutes;

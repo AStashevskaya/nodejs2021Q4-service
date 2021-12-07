@@ -1,10 +1,10 @@
-const {
+import {
   getTasksFromBoard,
   addTask,
   getTask,
   updateTask,
   deleteTask,
-} = require('./task.service');
+} from './task.service';
 
 const TaskSchema = {
   type: 'object',
@@ -100,4 +100,4 @@ function TasksRoutes(fastify, options, done) {
   done();
 }
 
-module.exports = TasksRoutes;
+export default TasksRoutes;

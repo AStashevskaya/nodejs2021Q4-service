@@ -22,7 +22,7 @@ const deleteOne = async ({ id }) => {
   boards.splice(boardIdx, 1);
 };
 
-module.exports = {
+export {
   getAll,
   create,
   findOneByLogin,

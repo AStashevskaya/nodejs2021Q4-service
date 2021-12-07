@@ -27,7 +27,7 @@ const deleteOne = async ({ id }) => {
   users.splice(userIdx, 1);
 };
 
-module.exports = {
+export {
   getAll,
   create,
   findOneByLogin,

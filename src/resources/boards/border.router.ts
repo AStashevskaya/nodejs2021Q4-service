@@ -1,10 +1,17 @@
-const {
+import {
   getBoards,
   addBoard,
   getBoard,
   updateBoard,
   deleteBoard,
-} = require('./board.service');
+} from './board.service';
+// const {
+//   getBoards,
+//   addBoard,
+//   getBoard,
+//   updateBoard,
+//   deleteBoard,
+// } = require('./board.service');
 
 const BoardSchema = {
   type: 'object',
@@ -100,4 +107,4 @@ function boardRoutes(fastify, options, done) {
   done();
 }
 
-module.exports = boardRoutes;
+export default boardRoutes;

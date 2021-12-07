@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    // "module": "ES2015",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "target": "es6",
+    "noImplicitAny": false,
+    "sourceMap": false,
+    "rootDir": "./src",
+    "outDir": "build",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  },
+  "exclude": ["node_modules", "**/*.spec.ts", "**/*.test.ts"],
+  "include": ["src/**/*.ts", "src/controllers"]
+}

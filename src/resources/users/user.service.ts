@@ -1,6 +1,6 @@
-const usersRepo = require('./user.memory.repository');
-const tasksRepo = require('../tasks/tasks.memory.repository')
-const User = require('./user.model');
+import * as usersRepo from './user.memory.repository';
+import * as tasksRepo from '../tasks/tasks.memory.repository'
+import User from './user.model';
 
 const getAll = () => usersRepo.getAll();
 
@@ -70,4 +70,4 @@ const deleteUser = async (req, reply) => {
       }
 };
 
-module.exports = { getAll, getUsers, getUser, addUser, updateUser, deleteUser };
+export  { getAll, getUsers, getUser, addUser, updateUser, deleteUser };

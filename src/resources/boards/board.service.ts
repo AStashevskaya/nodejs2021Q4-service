@@ -1,7 +1,8 @@
-const boardsRepo = require('./board.memory.repository');
-const tasksRepo = require('../tasks/tasks.memory.repository');
-const Board = require('./board.model');
-const Column = require('../columns/column.model');
+import * as boardsRepo from './board.memory.repository'
+// const boardsRepo = require('./board.memory.repository');
+// const tasksRepo = require('../tasks/tasks.memory.repository');
+// const Board = require('./board.model');
+// const Column = require('../columns/column.model');
 
 const getBoards = async (req, reply) => {
   const boards = await boardsRepo.getAll();
@@ -73,4 +74,4 @@ const deleteBoard = async (req, reply) => {
   }
 };
 
-module.exports = { getBoards, getBoard, addBoard, updateBoard, deleteBoard };
+export { getBoards, getBoard, addBoard, updateBoard, deleteBoard };

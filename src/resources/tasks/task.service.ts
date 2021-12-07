@@ -1,6 +1,10 @@
-const tasksRepo = require('./tasks.memory.repository');
-const boardsRepo = require('../boards/board.memory.repository');
-const Task = require('./tasks.model');
+import * as tasksRepo from './tasks.memory.repository';
+import * as boardsRepo from '../boards/board.memory.repository';
+import Task from './tasks.model';
+
+// const tasksRepo = require('./tasks.memory.repository');
+// const boardsRepo = require('../boards/board.memory.repository');
+// const Task = require('./tasks.model');
 
 const getTasksFromBoard = async (req, reply) => {
   const { boardId } = req.params;
@@ -99,7 +103,7 @@ const deleteTask = async (req, reply) => {
 //   "columnId": null
 //   }
 
-module.exports = {
+export {
   getTasksFromBoard,
   getTask,
   addTask,

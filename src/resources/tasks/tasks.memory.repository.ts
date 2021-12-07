@@ -29,7 +29,7 @@ const deleteOne = async ({ id }) => {
   tasks.splice(taskIdx, 1);
 };
 
-module.exports = {
+export = {
   getAll,
   create,
   findOneByBoardId,
