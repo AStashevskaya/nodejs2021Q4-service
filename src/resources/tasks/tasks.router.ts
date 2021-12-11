@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+import { FastifyInstance, RegisterOptions } from 'fastify';
 import {
   getTasksFromBoard,
   addTask,
@@ -90,14 +92,18 @@ const addTaskOptions = {
   handler: addTask,
 };
 
-function TasksRoutes(fastify, options, done) {
+function TasksRoutes(
+  fastify: FastifyInstance,
+  options: RegisterOptions,
+  // done: Function
+) {
   fastify.get('/boards/:boardId/tasks', getAllBoardTasksOptions);
   fastify.post('/boards/:boardId/tasks', addTaskOptions);
   fastify.get('/boards/:boardId/tasks/:taskId', getTaskOptions);
   fastify.put('/boards/:boardId/tasks/:taskId', updateTaskOptions);
   fastify.delete('/boards/:boardId/tasks/:taskId', deleteTaskOptions);
 
-  done();
+  // done();
 }
 
 export default TasksRoutes;

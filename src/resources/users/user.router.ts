@@ -1,3 +1,4 @@
+import { FastifyInstance, RegisterOptions } from 'fastify';
 import {
   getUsers,
   addUser,
@@ -70,7 +71,7 @@ const deleteUserOptions = {
   schema: {
     response: {
       200: {
-        type: 'string'
+        type: 'string',
       },
     },
   },
@@ -95,14 +96,14 @@ const addUserOptions = {
   handler: addUser,
 };
 
-function userRoutes(fastify, options, done) {
+function userRoutes(fastify: FastifyInstance, options: RegisterOptions, done) {
   fastify.get('/users', getAllUsersOptions);
   fastify.post('/users', addUserOptions);
   fastify.get('/users/:userId', getUserOptions);
-  fastify.put('/users/:userId', updateUserOptions)
+  fastify.put('/users/:userId', updateUserOptions);
   fastify.delete('/users/:userId', deleteUserOptions);
 
-  done();
+  // done();
 }
 
 export default userRoutes;

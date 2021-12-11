@@ -1,32 +1,35 @@
-let boards = [];
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+import Board from './board.model';
 
-const getAll = async () => boards;
-const create = async (newboard) => boards.push(newboard);
+let boards: Board[] = [];
 
-const findOneByLogin = async ({ login }) =>
-  boards.find((desk) => desk.login === login);
+const getAll = () => boards;
+const create = (newboard: Board) => boards.push(newboard);
 
-  const findById = async ({ id }) => {
-  const boardDB = await getAll();
+/**
+ * Returns Board
+ * @param id - distructured param from User string
+ * @returns board instanse of Board
+ */
+const findById = ({ id }: { id: string }) => {
+  const boardDB = getAll();
   const board = boardDB.find((desk) => desk.id === id);
+
   return board;
 };
-const updateOne = async ({ id, ...rest }) => {
-  boards = boards.map((board) =>
-    board.id === id ? { ...board, ...rest } : board
-  );
-};
-const deleteOne = async ({ id }) => {
-  const board = boards.find((el) => el.id === id);
-  const boardIdx = boards.indexOf(board);
-  boards.splice(boardIdx, 1);
+
+const updateOne = ({ id, ...rest }: { id: string }) => {
+  // @ts-ignore
+  boards = boards.map((board: Board) => new Board({ ...board, ...rest }));
 };
 
-export {
-  getAll,
-  create,
-  findOneByLogin,
-  findById,
-  updateOne,
-  deleteOne,
+const deleteOne = ({ id }: { id: string }) => {
+  const board = boards.find((el) => el.id === id);
+  const boardIdx = board && boards.indexOf(board);
+
+  if (boardIdx) {
+    boards.splice(boardIdx, 1);
+  }
 };
+
+export { getAll, create, findById, updateOne, deleteOne };

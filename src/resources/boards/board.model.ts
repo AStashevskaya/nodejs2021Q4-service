@@ -1,16 +1,17 @@
-import { uuidv4 } from 'uuid';
-// const { v4: uuidv4 } = require('uuid');
+import { v4 as uuidv4 } from 'uuid';
+import Column from '../columns/column.model';
+
+interface Board {
+  id: string;
+  title: string;
+  columns: Column[];
+}
 
 class Board {
   constructor({ id = uuidv4(), title = 'Backlog', columns = [] } = {}) {
     this.id = id;
     this.title = title;
     this.columns = columns;
-  }
-
-  static toResponse(board) {
-    const { id, title, columns } = board;
-    return { id, title, columns };
   }
 }
 

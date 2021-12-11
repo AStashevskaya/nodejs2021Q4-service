@@ -1,77 +1,133 @@
-import * as boardsRepo from './board.memory.repository'
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+import {
+  RawReplyDefaultExpression,
+  RawRequestDefaultExpression,
+  RawServerDefault,
+  RouteHandler,
+  RouteHandlerMethod,
+} from 'fastify';
+
+import * as boardsRepo from './board.memory.repository';
+import * as tasksRepo from '../tasks/tasks.memory.repository';
+import Column from '../columns/column.model';
+import Board from './board.model';
+
+type ErrorResponse = {
+  message: string;
+};
+
 // const boardsRepo = require('./board.memory.repository');
 // const tasksRepo = require('../tasks/tasks.memory.repository');
 // const Board = require('./board.model');
 // const Column = require('../columns/column.model');
 
-const getBoards = async (req, reply) => {
-  const boards = await boardsRepo.getAll();
+const getBoards: RouteHandlerMethod<
+RawServerDefault,
+RawRequestDefaultExpression,
+RawReplyDefaultExpression,
+{ Reply: Board[] }
+> = async (req, reply) => {
+  const boards = boardsRepo.getAll();
 
-  reply.send(boards);
+  await reply.send(boards);
 };
 
-const getBoard = async (req, reply) => {
+const getBoard: RouteHandlerMethod<
+RawServerDefault,
+RawRequestDefaultExpression,
+RawReplyDefaultExpression,
+{ Reply: Board | ErrorResponse; Params: { boardId: string } }
+> = async (req, reply) => {
   const { boardId: id } = req.params;
 
   try {
-    const board = await boardsRepo.findById({ id });
+    const board = boardsRepo.findById({ id });
 
     if (!board) {
-      throw new Error()
+      throw new Error();
     }
 
-     reply.code(200).send(board);
+    await reply.code(200).send(board);
   } catch (error) {
-    reply.code(404).send({ message: 'Not found' });
+    await reply.code(404).send({ message: 'Not found' });
   }
 };
 
-const addBoard = async (req, reply) => {
+const addBoard: RouteHandlerMethod<
+RawServerDefault,
+RawRequestDefaultExpression,
+RawReplyDefaultExpression,
+{
+  Reply: Board | ErrorResponse;
+  Body: { title: string; columns: object[] };
+}
+> = async (req, reply) => {
   const { columns, title } = req.body;
-  const columnsObj = columns.map((el) => new Column(el));
+  const columnsObj: Column[] = columns.map((el: object) => new Column(el)) || [];
 
   try {
+    // @ts-ignore
     const newBoard = new Board({ title, columns: columnsObj });
 
-    await boardsRepo.create(newBoard);
+    boardsRepo.create(newBoard);
 
-    reply.code(201).send(newBoard);
+    await reply.code(201).send(newBoard);
   } catch (error) {
-    reply.code(400).send({ message: 'Something goes wrong' });
+    await reply.code(400).send({ message: 'Something goes wrong' });
   }
 };
 
-const updateBoard = async (req, reply) => {
+const updateBoard: RouteHandlerMethod<
+RawServerDefault,
+RawRequestDefaultExpression,
+RawReplyDefaultExpression,
+{
+  Reply: Board | ErrorResponse;
+  Body: { title: string; columns: Column[] };
+  Params: { boardId: string };
+}
+> = async (req, reply) => {
   const { boardId: id } = req.params;
 
   try {
-    await boardsRepo.updateOne({ id, ...req.body });
-    const board = await boardsRepo.findById({ id });
-    const updatedBoard = { ...board, ...req.body };
+    boardsRepo.updateOne({ id, ...req.body });
+    const board = boardsRepo.findById({ id });
 
-    reply.code(200).send(updatedBoard);
+    // if (board) {
+
+    await reply.code(200).send(board);
+    // const updatedBoard = new Board({ ...board, ...req.body });
+    // await reply.code(200).send(updatedBoard);
+    // }
   } catch (error) {
-    reply.code(404);
+    await reply.code(404);
   }
 };
 
-const deleteBoard = async (req, reply) => {
+const deleteBoard: RouteHandlerMethod<
+RawServerDefault,
+RawRequestDefaultExpression,
+RawReplyDefaultExpression,
+{ Reply: Board | string; Params: { boardId: string } }
+> = async (req, reply) => {
   const { boardId: id } = req.params;
 
   try {
-    const board = await boardsRepo.findById({ id });
+    const board = boardsRepo.findById({ id });
 
     if (!board) {
-      throw new Error ({message: 'Such board is not exist'})
+      throw new Error();
     }
 
-    await tasksRepo.deleteAllBoardId(id);
-    await boardsRepo.deleteOne({ id });
+    tasksRepo.deleteAllBoardId(id);
+    boardsRepo.deleteOne({ id });
 
-    reply.send('Board deleted');
+    await reply.send('Board deleted');
   } catch (error) {
-    reply.code(404).send('Not Found');
+    await reply.code(404).send('Not Found');
   }
 };
 
-export { getBoards, getBoard, addBoard, updateBoard, deleteBoard };
+export {
+  getBoards, getBoard, addBoard, updateBoard, deleteBoard,
+};

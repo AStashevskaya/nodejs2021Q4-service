@@ -1,5 +1,11 @@
-import { uuidv4 } from 'uuid'
+import { v4 as uuidv4 } from 'uuid';
 // const { v4: uuidv4 } = require('uuid');
+
+interface Column {
+  id: string;
+  title: string;
+  order: string;
+}
 
 class Column {
   constructor({
@@ -10,11 +16,6 @@ class Column {
     this.id = id;
     this.title = title;
     this.order = order;
-  }
-
-  static toResponse(column) {
-    const { id, title, order } = column;
-    return { id, title, order };
   }
 }
 

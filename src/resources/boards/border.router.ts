@@ -1,3 +1,4 @@
+import { FastifyInstance, RegisterOptions } from 'fastify';
 import {
   getBoards,
   addBoard,
@@ -5,13 +6,6 @@ import {
   updateBoard,
   deleteBoard,
 } from './board.service';
-// const {
-//   getBoards,
-//   addBoard,
-//   getBoard,
-//   updateBoard,
-//   deleteBoard,
-// } = require('./board.service');
 
 const BoardSchema = {
   type: 'object',
@@ -97,14 +91,14 @@ const addBoardOptions = {
   handler: addBoard,
 };
 
-function boardRoutes(fastify, options, done) {
+function boardRoutes(fastify: FastifyInstance, options: RegisterOptions, done) {
   fastify.get('/boards', getAllBoardsOptions);
   fastify.post('/boards', addBoardOptions);
   fastify.get('/boards/:boardId', getBoardOptions);
   fastify.put('/boards/:boardId', updateBoardOptions);
   fastify.delete('/boards/:boardId', deleteBoardOptions);
 
-  done();
+  // done();
 }
 
 export default boardRoutes;

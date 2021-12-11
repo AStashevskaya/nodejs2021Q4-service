@@ -1,37 +1,59 @@
-let users = [];
+import User from './user.model';
 
-// const getAll = async () => {
-//   // const users = []
-//   return users;
-//   // // TODO: mock implementation. should be replaced during task development
-//   // return [];
-// };
+let users: User[] = [];
 
-const getAll = async () => users;
-const create = async (user) => users.push(user);
-const findOneByLogin = async ({ login }) =>
-  users.find((user) => user.login === login);
-const findById = async ({ id }) => {
-  const usersDB = await getAll();
-  const user = usersDB.find((person) => person.id === id);
+/**
+ * Returns array of users
+ * @returns users array
+ */
+const getAll = () => users;
+
+/**
+ * Returns the sum of a and b
+ * @param user - param new poste user User
+ * @returns void
+ */
+const create = (user: User) => users.push(user);
+
+/**
+ * Returns the sum of a and b
+ * @param id - distructured param from User string
+ * @returns user User
+ */
+const findById = ({ id }: { id: string }) => {
+  const usersDB = getAll();
+  const user = usersDB.find((person: User) => person.id === id);
+
   return user;
 };
-const updateOne = async ({ id, ...rest }) => {
-  users = users.map((person) =>
-    person.id === id ? { ...person, ...rest } : person
-  );
+
+/**
+ * Returns the sum of a and b
+ * @param id - distructured first param from User string
+ * @param rest - distructured rest params from User array of strings
+ * @returns void
+ */
+const updateOne = ({ id, ...rest }: { id: string }) => {
+  // users = users.map((person: User) =>
+  //   person.id === id ? new User({ ...person, ...rest }) : person
+  // );
+  users = users.map((person: User) => new User({ ...person, ...rest }));
 };
-const deleteOne = async ({ id }) => {
-  const user = users.find((el) => el.id === id);
-  const userIdx = users.indexOf(user);
-  users.splice(userIdx, 1);
+
+/**
+ * Returns the sum of a and b
+ * @param id - distructured first param from User string
+ * @returns void
+ */
+const deleteOne = ({ id }: { id: string }) => {
+  const user = users.find((person: User) => person.id === id);
+  const userIdx = user && users.indexOf(user);
+
+  if (userIdx) {
+    users.splice(userIdx, 1);
+  }
 };
 
 export {
-  getAll,
-  create,
-  findOneByLogin,
-  findById,
-  updateOne,
-  deleteOne,
+  getAll, create, findById, updateOne, deleteOne,
 };

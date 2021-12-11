@@ -1,4 +1,12 @@
-import {  uuidv4 } from 'uuid';
+import { v4 as uuidv4 } from 'uuid';
+
+interface User {
+  id: string;
+  name: string;
+  login: string;
+  password: string;
+  toResponse(): { name: string; id: string; login: string };
+}
 
 class User {
   constructor({
@@ -13,8 +21,11 @@ class User {
     this.password = password;
   }
 
-  static toResponse(user) {
-    const { id, name, login } = user;
+  public toResponse() {
+    const { id } = this;
+    const { name } = this;
+    const { login } = this;
+    // return { id: this.id, name: this.name, login: this.login };
     return { id, name, login };
   }
 }

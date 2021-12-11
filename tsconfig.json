@@ -3,6 +3,7 @@
     // "module": "ES2015",
     "moduleResolution": "node",
     "resolveJsonModule": true,
+    "strict": true,   
     "esModuleInterop": true,
     "target": "es6",
     "noImplicitAny": false,
