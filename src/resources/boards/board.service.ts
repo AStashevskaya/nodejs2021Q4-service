@@ -3,7 +3,6 @@ import {
   RawReplyDefaultExpression,
   RawRequestDefaultExpression,
   RawServerDefault,
-  RouteHandler,
   RouteHandlerMethod,
 } from 'fastify';
 
@@ -28,6 +27,7 @@ RawReplyDefaultExpression,
 { Reply: Board[] }
 > = async (req, reply) => {
   const boards = boardsRepo.getAll();
+  console.log('boards', boards);
 
   await reply.send(boards);
 };

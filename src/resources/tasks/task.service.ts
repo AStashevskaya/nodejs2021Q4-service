@@ -2,7 +2,6 @@ import {
   RawReplyDefaultExpression,
   RawRequestDefaultExpression,
   RawServerDefault,
-  RouteHandler,
   RouteHandlerMethod,
 } from 'fastify';
 import * as tasksRepo from './tasks.memory.repository';
@@ -27,10 +26,6 @@ RawReplyDefaultExpression,
 
   try {
     const tasks = tasksRepo.findOneByBoardId({ boardId });
-
-    if (!tasks.length) {
-      await reply.code(404);
-    }
 
     await reply.code(200).send(tasks);
   } catch (error) {
@@ -80,7 +75,8 @@ RawReplyDefaultExpression,
       throw new Error();
     }
 
-    const newTask = new Task({ boardId, ...req.body });
+    const newTask = new Task({ ...req.body, boardId });
+    console.log('new task', newTask, boardId);
     tasksRepo.create(newTask);
 
     await reply.code(201).send(newTask);

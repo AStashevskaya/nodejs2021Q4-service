@@ -19,7 +19,7 @@ class Task {
     userId = null,
     boardId = '',
     columnId = null,
-  } = {}) {
+  }) {
     this.id = id;
     this.title = title;
     this.order = order;

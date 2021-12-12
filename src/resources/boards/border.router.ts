@@ -91,14 +91,14 @@ const addBoardOptions = {
   handler: addBoard,
 };
 
-function boardRoutes(fastify: FastifyInstance, options: RegisterOptions, done) {
+async function boardRoutes(fastify: FastifyInstance, options: RegisterOptions) {
   fastify.get('/boards', getAllBoardsOptions);
   fastify.post('/boards', addBoardOptions);
   fastify.get('/boards/:boardId', getBoardOptions);
   fastify.put('/boards/:boardId', updateBoardOptions);
   fastify.delete('/boards/:boardId', deleteBoardOptions);
 
-  // done();
+  await Promise.resolve();
 }
 
 export default boardRoutes;

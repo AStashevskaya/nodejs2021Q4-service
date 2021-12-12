@@ -2,7 +2,6 @@ import {
   RawReplyDefaultExpression,
   RawRequestDefaultExpression,
   RawServerDefault,
-  RouteHandler,
   RouteHandlerMethod,
 } from 'fastify';
 import * as usersRepo from './user.memory.repository';
@@ -32,7 +31,7 @@ RawReplyDefaultExpression,
 { Reply: UserResponse[] }
 > = async (req, reply) => {
   const users = getAll();
-  console.log(users);
+
   try {
     await reply.send(users.map((user) => user.toResponse()));
   } catch (error) {
@@ -116,7 +115,6 @@ RawReplyDefaultExpression,
 
   try {
     tasksRepo.updateAllUserId(id);
-    // const tasks = await tasksRepo.getAll();
 
     usersRepo.deleteOne({ id });
 

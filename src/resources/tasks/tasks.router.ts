@@ -77,13 +77,7 @@ const addTaskOptions = {
   schema: {
     body: {
       type: 'object',
-      required: [
-        'title',
-        'order',
-        'description',
-        'userId',
-        'boardId',
-      ],
+      required: ['title', 'order', 'description', 'userId', 'boardId'],
     },
     response: {
       201: TaskSchema,
@@ -92,18 +86,14 @@ const addTaskOptions = {
   handler: addTask,
 };
 
-function TasksRoutes(
-  fastify: FastifyInstance,
-  options: RegisterOptions,
-  // done: Function
-) {
+async function TasksRoutes(fastify: FastifyInstance, options: RegisterOptions) {
   fastify.get('/boards/:boardId/tasks', getAllBoardTasksOptions);
   fastify.post('/boards/:boardId/tasks', addTaskOptions);
   fastify.get('/boards/:boardId/tasks/:taskId', getTaskOptions);
   fastify.put('/boards/:boardId/tasks/:taskId', updateTaskOptions);
   fastify.delete('/boards/:boardId/tasks/:taskId', deleteTaskOptions);
 
-  // done();
+  await Promise.resolve();
 }
 
 export default TasksRoutes;

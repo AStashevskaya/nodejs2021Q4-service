@@ -96,14 +96,14 @@ const addUserOptions = {
   handler: addUser,
 };
 
-function userRoutes(fastify: FastifyInstance, options: RegisterOptions, done) {
+async function userRoutes(fastify: FastifyInstance, options: RegisterOptions) {
   fastify.get('/users', getAllUsersOptions);
   fastify.post('/users', addUserOptions);
   fastify.get('/users/:userId', getUserOptions);
   fastify.put('/users/:userId', updateUserOptions);
   fastify.delete('/users/:userId', deleteUserOptions);
 
-  // done();
+  await Promise.resolve();
 }
 
 export default userRoutes;
