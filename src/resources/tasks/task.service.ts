@@ -76,7 +76,6 @@ RawReplyDefaultExpression,
     }
 
     const newTask = new Task({ ...req.body, boardId });
-    console.log('new task', newTask, boardId);
     tasksRepo.create(newTask);
 
     await reply.code(201).send(newTask);
@@ -96,7 +95,6 @@ RawReplyDefaultExpression,
   try {
     tasksRepo.updateOne({ ID: taskId, ...req.body });
     const task = tasksRepo.findById({ id: taskId });
-    // const updatedTask = new Task({ ...task, ...req.body });
 
     await reply.code(200).send(task);
   } catch (error) {
@@ -126,14 +124,6 @@ RawReplyDefaultExpression,
     await reply.code(404).send('Not found');
   }
 };
-
-// {   "title": "Autotest task",
-//   "order": 0,
-//   "description": "Lorem ipsum",
-//   "userId": null,
-//   "boardId": null,
-//   "columnId": null
-//   }
 
 export {
   getTasksFromBoard, getTask, addTask, updateTask, deleteTask,

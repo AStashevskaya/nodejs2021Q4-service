@@ -8,7 +8,7 @@ interface Board {
 }
 
 class Board {
-  constructor({ id = uuidv4(), title = 'Backlog', columns = [] } = {}) {
+  constructor({ id = uuidv4(), title = 'Backlog', columns = [new Column()] }) {
     this.id = id;
     this.title = title;
     this.columns = columns;

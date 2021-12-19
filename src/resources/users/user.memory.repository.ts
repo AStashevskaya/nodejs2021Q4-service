@@ -4,19 +4,19 @@ let users: User[] = [];
 
 /**
  * Returns array of users
- * @returns users array
+ * @returns users array User[]
  */
 const getAll = () => users;
 
 /**
- * Returns the sum of a and b
- * @param user - param new poste user User
- * @returns void
+ * Returns update array of user with new user inside
+ * @param user - param new user object User
+ * @returns updated users array
  */
 const create = (user: User) => users.push(user);
 
 /**
- * Returns the sum of a and b
+ * Returns user with requested id
  * @param id - distructured param from User string
  * @returns user User
  */
@@ -28,20 +28,17 @@ const findById = ({ id }: { id: string }) => {
 };
 
 /**
- * Returns the sum of a and b
+ * Update requested user in users array
  * @param id - distructured first param from User string
  * @param rest - distructured rest params from User array of strings
  * @returns void
  */
 const updateOne = ({ id, ...rest }: { id: string }) => {
-  // users = users.map((person: User) =>
-  //   person.id === id ? new User({ ...person, ...rest }) : person
-  // );
   users = users.map((person: User) => new User({ ...person, ...rest }));
 };
 
 /**
- * Returns the sum of a and b
+ * Delete requested user in users array
  * @param id - distructured first param from User string
  * @returns void
  */

@@ -1,7 +1,8 @@
 import fastify from 'fastify';
 // // import fastify from 'fastify';
 // import { FastifyReply } from 'fastify';
-import { PORT } from './common/config';
+// import config from './common/config';
+import config from './common/config';
 import userRoutes from './resources/users/user.router';
 import boardRoutes from './resources/boards/border.router';
 import TasksRoutes from './resources/tasks/tasks.router';
@@ -14,9 +15,9 @@ const start = async () => {
     await app.register(userRoutes);
     await app.register(boardRoutes);
     await app.register(TasksRoutes);
-    await app.listen(PORT);
+    await app.listen(config.PORT);
 
-    console.log(`App is running on http://localhost:${PORT}`);
+    console.log(`App is running on http://localhost:${config.PORT}`);
   } catch (error) {
     app.log.error(error);
     // eslint-disable-next-line no-process-exit
