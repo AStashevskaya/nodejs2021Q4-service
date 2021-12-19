@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 type ConfigType = {
-  PORT: string | number,
+  PORT: string,
   NODE_ENV: string,
   MONGO_CONNECTION_STRING: string,
   JWT_SECRET_KEY: string,
@@ -11,7 +11,7 @@ type ConfigType = {
 };
 
 const config: ConfigType = {
-  PORT: process.env.PORT || 4000,
+  PORT: process.env.PORT || '4000',
   NODE_ENV: process.env.NODE_ENV || 'development',
   MONGO_CONNECTION_STRING: process.env.MONGO_CONNECTION_STRING || '',
   JWT_SECRET_KEY: process.env.JWT_SECRET_KEY || '',
