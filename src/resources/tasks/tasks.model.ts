@@ -1,16 +1,20 @@
 import { v4 as uuidv4 } from 'uuid';
 
-interface Task {
-  id: string;
-  title: string;
-  order: string | number;
-  description: string;
-  userId: string | null;
-  columnId: string | null;
-  boardId: string;
-}
-
 class Task {
+  id: string;
+
+  title: string;
+
+  order: string | number;
+
+  description: string;
+
+  userId: string | null;
+
+  columnId: string | null;
+
+  boardId: string;
+
   constructor({
     id = uuidv4(),
     title = 'Fix Bugs',

@@ -1,4 +1,4 @@
-import { FastifyInstance, RegisterOptions } from 'fastify';
+import { FastifyInstance } from 'fastify';
 import {
   getBoards,
   addBoard,
@@ -91,7 +91,14 @@ const addBoardOptions = {
   handler: addBoard,
 };
 
-async function boardRoutes(fastify: FastifyInstance, options: RegisterOptions) {
+/**
+ * Boards routes
+ *
+ * @param fastify - Fastify Instance
+ * @returns Promise (void)
+ */
+
+async function boardRoutes(fastify: FastifyInstance) {
   fastify.get('/boards', getAllBoardsOptions);
   fastify.post('/boards', addBoardOptions);
   fastify.get('/boards/:boardId', getBoardOptions);

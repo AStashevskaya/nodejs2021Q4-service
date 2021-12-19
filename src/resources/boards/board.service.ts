@@ -14,6 +14,10 @@ type ErrorResponse = {
   message: string;
 };
 
+/** get all boards
+ * @param req - Fastify Request
+ * @returns Board[] or ErrorResponse
+ */
 const getBoards: RouteHandlerMethod<
 RawServerDefault,
 RawRequestDefaultExpression,
@@ -25,6 +29,10 @@ RawReplyDefaultExpression,
   await reply.send(boards);
 };
 
+/** get a specific Board
+ * @param req - Fastify Request
+ * @returns Board or ErrorResponse
+ */
 const getBoard: RouteHandlerMethod<
 RawServerDefault,
 RawRequestDefaultExpression,
@@ -46,6 +54,10 @@ RawReplyDefaultExpression,
   }
 };
 
+/** create new Board
+ * @param req - Fastify Request
+ * @returns Board or ErrorResponse
+ */
 const addBoard: RouteHandlerMethod<
 RawServerDefault,
 RawRequestDefaultExpression,
@@ -69,6 +81,10 @@ RawReplyDefaultExpression,
   }
 };
 
+/** update Board
+ * @param req - Fastify Request
+ * @returns Board or ErrorResponse
+ */
 const updateBoard: RouteHandlerMethod<
 RawServerDefault,
 RawRequestDefaultExpression,
@@ -91,6 +107,10 @@ RawReplyDefaultExpression,
   }
 };
 
+/** delete Board
+ * @param req - Fastify Request
+ * @returns Board or ErrorResponse
+ */
 const deleteBoard: RouteHandlerMethod<
 RawServerDefault,
 RawRequestDefaultExpression,

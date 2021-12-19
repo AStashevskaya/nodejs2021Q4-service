@@ -1,4 +1,4 @@
-import { FastifyInstance, RegisterOptions } from 'fastify';
+import { FastifyInstance } from 'fastify';
 import {
   getUsers,
   addUser,
@@ -96,7 +96,14 @@ const addUserOptions = {
   handler: addUser,
 };
 
-async function userRoutes(fastify: FastifyInstance, options: RegisterOptions) {
+/**
+ * User routes
+ *
+ * @param fastify - Fastify Instance
+ * @returns Promise (void)
+ */
+
+async function userRoutes(fastify: FastifyInstance) {
   fastify.get('/users', getAllUsersOptions);
   fastify.post('/users', addUserOptions);
   fastify.get('/users/:userId', getUserOptions);

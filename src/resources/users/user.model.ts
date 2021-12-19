@@ -1,14 +1,22 @@
 import { v4 as uuidv4 } from 'uuid';
 
-interface User {
-  id: string;
-  name: string;
-  login: string;
-  password: string;
-  toResponse(): { name: string; id: string; login: string };
-}
+// type UserType = {
+//   id: string;
+//   name: string;
+//   login: string;
+//   password: string;
+//   toResponse(): { name: string; id: string; login: string };
+// };
 
 class User {
+  id: string;
+
+  name: string;
+
+  login: string;
+
+  password: string;
+
   constructor({
     id = uuidv4(),
     name = 'USER',
@@ -25,7 +33,7 @@ class User {
     const { id } = this;
     const { name } = this;
     const { login } = this;
-    // return { id: this.id, name: this.name, login: this.login };
+
     return { id, name, login };
   }
 }

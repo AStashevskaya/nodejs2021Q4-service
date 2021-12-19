@@ -13,6 +13,10 @@ type ErrorResponse = {
   message: string;
 };
 
+/** get all Tasks
+ * @param req - Fastify Request
+ * @returns Task[] or ErrorResponse
+ */
 const getTasksFromBoard: RouteHandlerMethod<
 RawServerDefault,
 RawRequestDefaultExpression,
@@ -33,6 +37,10 @@ RawReplyDefaultExpression,
   }
 };
 
+/** get a specific Task
+ * @param req - Fastify Request
+ * @returns Task or ErrorResponse
+ */
 const getTask: RouteHandlerMethod<
 RawServerDefault,
 RawRequestDefaultExpression,
@@ -60,6 +68,10 @@ RawReplyDefaultExpression,
   }
 };
 
+/** create new Task
+ * @param req - Fastify Request
+ * @returns Task or ErrorResponse
+ */
 const addTask: RouteHandlerMethod<
 RawServerDefault,
 RawRequestDefaultExpression,
@@ -84,6 +96,10 @@ RawReplyDefaultExpression,
   }
 };
 
+/** update Task
+ * @param req - Fastify Request
+ * @returns Task or ErrorResponse
+ */
 const updateTask: RouteHandlerMethod<
 RawServerDefault,
 RawRequestDefaultExpression,
@@ -102,6 +118,10 @@ RawReplyDefaultExpression,
   }
 };
 
+/** delete Task
+ * @param req - Fastify Request
+ * @returns DeleteResponse or ErrorResponse
+ */
 const deleteTask: RouteHandlerMethod<
 RawServerDefault,
 RawRequestDefaultExpression,

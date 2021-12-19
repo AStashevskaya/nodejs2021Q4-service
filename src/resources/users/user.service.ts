@@ -9,28 +9,30 @@ import * as tasksRepo from '../tasks/tasks.memory.repository';
 import User from './user.model';
 
 type UserResponse = {
-  id: string,
-  login: string,
-  name: string
+  id: string;
+  login: string;
+  name: string;
 };
 
 type ErrorResponse = {
-  message: string
+  message: string;
 };
 
 type DeleteResponse = {
   message: string;
 };
 
-const getAll = () => usersRepo.getAll();
-
+/** get all user handler
+ * @param req - Fastify Request
+ * @returns Useresponse []
+ */
 const getUsers: RouteHandlerMethod<
 RawServerDefault,
 RawRequestDefaultExpression,
 RawReplyDefaultExpression,
 { Reply: UserResponse[] }
 > = async (req, reply) => {
-  const users = getAll();
+  const users = usersRepo.getAll();
 
   try {
     await reply.send(users.map((user) => user.toResponse()));
@@ -39,6 +41,10 @@ RawReplyDefaultExpression,
   }
 };
 
+/** get a user
+ * @param req - Fastify Request
+ * @returns user getted by id Useresponse
+ */
 const getUser: RouteHandlerMethod<
 RawServerDefault,
 RawRequestDefaultExpression,
@@ -60,6 +66,10 @@ RawReplyDefaultExpression,
   }
 };
 
+/** create new user handler
+ * @param req - Fastify Request
+ * @returns new user Useresponse || ErrorResponse
+ */
 const addUser: RouteHandlerMethod<
 RawServerDefault,
 RawRequestDefaultExpression,
@@ -82,6 +92,10 @@ RawReplyDefaultExpression,
   }
 };
 
+/** update user with new params
+ * @param req - Fastify Request
+ * @returns user getted by id Useresponse || ErrorResponse
+ */
 const updateUser: RouteHandlerMethod<
 RawServerDefault,
 RawRequestDefaultExpression,
@@ -105,6 +119,10 @@ RawReplyDefaultExpression,
   }
 };
 
+/** delete User
+ * @param req - Fastify Request
+ * @returns DeleteResponse or ErrorResponse
+ */
 const deleteUser: RouteHandlerMethod<
 RawServerDefault,
 RawRequestDefaultExpression,
@@ -125,5 +143,5 @@ RawReplyDefaultExpression,
 };
 
 export {
-  getAll, getUsers, getUser, addUser, updateUser, deleteUser,
+  getUsers, getUser, addUser, updateUser, deleteUser,
 };

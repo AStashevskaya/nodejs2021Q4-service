@@ -46,7 +46,9 @@
     "import/prefer-default-export": "off",
     "tsdoc/syntax": "error",
     "@typescript-eslint/no-explicit-any": ["error"],
+    "@typescript-eslint/no-floating-promises": "off",
     "react/jsx-filename-extension": "off",
-    "implicit-arrow-linebreak": "off"
+    "implicit-arrow-linebreak": "off",
+    "no-floating-promises": "off"
   }
 }
