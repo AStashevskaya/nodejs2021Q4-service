@@ -4,8 +4,7 @@ import userRoutes from './resources/users/user.router';
 import boardRoutes from './resources/boards/border.router';
 import TasksRoutes from './resources/tasks/tasks.router';
 
-// const app = fastify({ logger: true, trustProxy: true });
-const app = fastify();
+const app = fastify({ logger: true, trustProxy: true });
 
 const start = async () => {
   try {
