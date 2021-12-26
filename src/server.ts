@@ -3,8 +3,13 @@ import config from './common/config';
 import userRoutes from './resources/users/user.router';
 import boardRoutes from './resources/boards/border.router';
 import TasksRoutes from './resources/tasks/tasks.router';
+import pinoLog, { handleError } from './logger';
 
-const app = fastify({ logger: true, trustProxy: true });
+const app = fastify({
+  logger: pinoLog,
+});
+
+process.on('uncaughtException', handleError);
 
 const start = async () => {
   try {
@@ -15,16 +20,17 @@ const start = async () => {
 
     console.log(`App is running on http://localhost:${config.PORT}`);
   } catch (error) {
-    app.log.error(error);
+    pinoLog.error(error);
     // eslint-disable-next-line no-process-exit
     process.exit(1);
   }
 };
 
+// throw new Error('oops');
 (async function startSync() {
   try {
     await start();
   } catch (error) {
     console.error(error);
   }
-}());
+})();
