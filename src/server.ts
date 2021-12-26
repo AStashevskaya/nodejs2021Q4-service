@@ -9,8 +9,6 @@ const app = fastify({
   logger: pinoLog,
 });
 
-process.on('uncaughtException', handleError);
-
 const start = async () => {
   try {
     await app.register(userRoutes);
@@ -26,7 +24,6 @@ const start = async () => {
   }
 };
 
-// throw new Error('oops');
 (async function startSync() {
   try {
     await start();
@@ -34,3 +31,7 @@ const start = async () => {
     console.error(error);
   }
 })();
+
+process.on('uncaughtException', handleError);
+process.on('unhandledRejection', (reason) =>
+  handleError(new Error(String(reason))));

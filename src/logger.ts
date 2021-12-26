@@ -1,8 +1,14 @@
-import pino, { Logger, TransportMultiOptions } from 'pino';
+import pino, {
+  Logger,
+  TransportMultiOptions,
+  LoggerOptions,
+  TransportPipelineOptions,
+} from 'pino';
+import {
+  RawRequestDefaultExpression,
+  RawReplyDefaultExpression,
+} from 'fastify';
 
-// const transport = pino.transport(<TransportMultiOptions>{
-
-// });
 const levels = {
   http: 10,
   debug: 20,
@@ -10,6 +16,14 @@ const levels = {
   warn: 40,
   error: 50,
   fatal: 60,
+};
+
+type Request = {
+  method: string;
+  url: string;
+  routerPath: string;
+  params: object;
+  body: object;
 };
 
 const pinoLog: Logger = pino(
@@ -21,22 +35,20 @@ const pinoLog: Logger = pino(
         ignore: 'pid.hostname',
       },
     },
-
-    // prettyPrint: true,
     prettyPrint: {
-      colorize: true, // colorizes the log
+      colorize: true,
       levelFirst: true,
       translateTime: 'yyyy-dd-mm, h:MM:ss TT',
       ignore: 'pid.hostname',
     },
-    customLevels: levels, // our defined levels
+    customLevels: levels,
     serializers: {
-      res(reply) {
+      res(reply: RawReplyDefaultExpression) {
         return {
           statusCode: reply.statusCode,
         };
       },
-      req(request) {
+      req(request: Request) {
         return {
           method: request.method,
           url: request.url,
@@ -46,13 +58,11 @@ const pinoLog: Logger = pino(
         };
       },
     },
-  }
-  // pino.destination(`${__dirname}/logger.log`),
+  },
 );
 
 export function handleError(
   error: Error,
-  // customLogger: pino.Logger,
   ...args: []
 ): void {
   pinoLog.error(error);
