@@ -1,0 +1,3174 @@
+[32mINFO[39m [2021-26-12, 9:05:58 AM] (2414 on MacBook-Air-Anastasiya.local): [36mServer listening at http://127.0.0.1:4000[39m
+[32mINFO[39m [2021-26-12, 9:06:17 AM] (2458 on MacBook-Air-Anastasiya.local): [36mServer listening at http://127.0.0.1:4000[39m
+[31mERROR[39m [2021-26-12, 9:06:26 AM] (2477 on MacBook-Air-Anastasiya.local): [36moops[39m
+    err: {
+      "type": "Error",
+      "message": "oops",
+      "stack":
+          Error: oops
+              at Object.<anonymous> (/Users/anastasiyastashevskaya/Desktop/nodejs/rest/nodejs2021Q4-service/src/server.ts:54:7)
+              at Module._compile (node:internal/modules/cjs/loader:1092:14)
+              at Module.m._compile (/Users/anastasiyastashevskaya/Desktop/nodejs/rest/nodejs2021Q4-service/node_modules/ts-node/src/index.ts:1371:23)
+              at Module._extensions..js (node:internal/modules/cjs/loader:1121:10)
+              at Object.require.extensions.<computed> [as .ts] (/Users/anastasiyastashevskaya/Desktop/nodejs/rest/nodejs2021Q4-service/node_modules/ts-node/src/index.ts:1374:12)
+              at Module.load (node:internal/modules/cjs/loader:972:32)
+              at Function.Module._load (node:internal/modules/cjs/loader:813:14)
+              at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)
+              at main (/Users/anastasiyastashevskaya/Desktop/nodejs/rest/nodejs2021Q4-service/node_modules/ts-node/src/bin.ts:331:12)
+              at Object.<anonymous> (/Users/anastasiyastashevskaya/Desktop/nodejs/rest/nodejs2021Q4-service/node_modules/ts-node/src/bin.ts:482:3)
+    }
+[32mINFO[39m [2021-26-12, 9:06:51 AM] (2497 on MacBook-Air-Anastasiya.local): [36mServer listening at http://127.0.0.1:4000[39m
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "POST",
+      "url": "/boards",
+      "path": "/boards",
+      "parameters": {},
+      "body": null
+    }
+    reqId: "req-1"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 6.994916999945417
+    reqId: "req-1"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards",
+      "path": "/boards",
+      "parameters": {},
+      "body": null
+    }
+    reqId: "req-2"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.3930839999811724
+    reqId: "req-2"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards",
+      "path": "/boards",
+      "parameters": {},
+      "body": null
+    }
+    reqId: "req-3"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.15049999998882413
+    reqId: "req-3"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards/a2aa5670-f3e7-4b15-a2fc-85485c88e56e",
+      "path": "/boards/:boardId",
+      "parameters": {
+        "boardId": "a2aa5670-f3e7-4b15-a2fc-85485c88e56e"
+      },
+      "body": null
+    }
+    reqId: "req-4"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.34029199997894466
+    reqId: "req-4"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "POST",
+      "url": "/boards",
+      "path": "/boards",
+      "parameters": {},
+      "body": null
+    }
+    reqId: "req-5"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 0.5580000000772998
+    reqId: "req-5"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "DELETE",
+      "url": "/boards/02bebf82-3228-42c4-b47f-8fc5aae0b973",
+      "path": "/boards/:boardId",
+      "parameters": {
+        "boardId": "02bebf82-3228-42c4-b47f-8fc5aae0b973"
+      },
+      "body": null
+    }
+    reqId: "req-6"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.23320800007786602
+    reqId: "req-6"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "POST",
+      "url": "/boards",
+      "path": "/boards",
+      "parameters": {},
+      "body": null
+    }
+    reqId: "req-7"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 0.24662499991245568
+    reqId: "req-7"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "PUT",
+      "url": "/boards/c3f11dc2-a668-4655-8c36-b459576b7e0d",
+      "path": "/boards/:boardId",
+      "parameters": {
+        "boardId": "c3f11dc2-a668-4655-8c36-b459576b7e0d"
+      },
+      "body": null
+    }
+    reqId: "req-8"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.29866700002457947
+    reqId: "req-8"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards/c3f11dc2-a668-4655-8c36-b459576b7e0d",
+      "path": "/boards/:boardId",
+      "parameters": {
+        "boardId": "c3f11dc2-a668-4655-8c36-b459576b7e0d"
+      },
+      "body": null
+    }
+    reqId: "req-9"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.08720800001174212
+    reqId: "req-9"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "DELETE",
+      "url": "/boards/c3f11dc2-a668-4655-8c36-b459576b7e0d",
+      "path": "/boards/:boardId",
+      "parameters": {
+        "boardId": "c3f11dc2-a668-4655-8c36-b459576b7e0d"
+      },
+      "body": null
+    }
+    reqId: "req-a"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.09358300000894815
+    reqId: "req-a"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "POST",
+      "url": "/boards",
+      "path": "/boards",
+      "parameters": {},
+      "body": null
+    }
+    reqId: "req-b"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 0.1511250000912696
+    reqId: "req-b"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "DELETE",
+      "url": "/boards/31ee79d5-eb2f-43b0-a8e1-03954e9e5d61",
+      "path": "/boards/:boardId",
+      "parameters": {
+        "boardId": "31ee79d5-eb2f-43b0-a8e1-03954e9e5d61"
+      },
+      "body": null
+    }
+    reqId: "req-c"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.11545899999327958
+    reqId: "req-c"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards/31ee79d5-eb2f-43b0-a8e1-03954e9e5d61",
+      "path": "/boards/:boardId",
+      "parameters": {
+        "boardId": "31ee79d5-eb2f-43b0-a8e1-03954e9e5d61"
+      },
+      "body": null
+    }
+    reqId: "req-d"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 404
+    }
+    responseTime: 0.1159999999217689
+    reqId: "req-d"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "POST",
+      "url": "/boards",
+      "path": "/boards",
+      "parameters": {},
+      "body": null
+    }
+    reqId: "req-e"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 0.18487500003539026
+    reqId: "req-e"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "POST",
+      "url": "/boards/23a598eb-da40-4b0d-8591-27383a97ec39/tasks",
+      "path": "/boards/:boardId/tasks",
+      "parameters": {
+        "boardId": "23a598eb-da40-4b0d-8591-27383a97ec39"
+      },
+      "body": null
+    }
+    reqId: "req-f"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 0.5333749999990687
+    reqId: "req-f"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "POST",
+      "url": "/boards/23a598eb-da40-4b0d-8591-27383a97ec39/tasks",
+      "path": "/boards/:boardId/tasks",
+      "parameters": {
+        "boardId": "23a598eb-da40-4b0d-8591-27383a97ec39"
+      },
+      "body": null
+    }
+    reqId: "req-g"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 0.141334000043571
+    reqId: "req-g"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "POST",
+      "url": "/boards/23a598eb-da40-4b0d-8591-27383a97ec39/tasks",
+      "path": "/boards/:boardId/tasks",
+      "parameters": {
+        "boardId": "23a598eb-da40-4b0d-8591-27383a97ec39"
+      },
+      "body": null
+    }
+    reqId: "req-h"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 0.1181250000372529
+    reqId: "req-h"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "POST",
+      "url": "/boards/23a598eb-da40-4b0d-8591-27383a97ec39/tasks",
+      "path": "/boards/:boardId/tasks",
+      "parameters": {
+        "boardId": "23a598eb-da40-4b0d-8591-27383a97ec39"
+      },
+      "body": null
+    }
+    reqId: "req-i"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 0.10537499992642552
+    reqId: "req-i"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "POST",
+      "url": "/boards/23a598eb-da40-4b0d-8591-27383a97ec39/tasks",
+      "path": "/boards/:boardId/tasks",
+      "parameters": {
+        "boardId": "23a598eb-da40-4b0d-8591-27383a97ec39"
+      },
+      "body": null
+    }
+    reqId: "req-j"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 0.12208300002384931
+    reqId: "req-j"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards/23a598eb-da40-4b0d-8591-27383a97ec39/tasks/779a9c46-b809-46ba-9e05-f5d12db69ec8",
+      "path": "/boards/:boardId/tasks/:taskId",
+      "parameters": {
+        "boardId": "23a598eb-da40-4b0d-8591-27383a97ec39",
+        "taskId": "779a9c46-b809-46ba-9e05-f5d12db69ec8"
+      },
+      "body": null
+    }
+    reqId: "req-k"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.3174169999547303
+    reqId: "req-k"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards/23a598eb-da40-4b0d-8591-27383a97ec39/tasks/f08e7a71-f755-4ae3-9ee0-9cda1d9fe63c",
+      "path": "/boards/:boardId/tasks/:taskId",
+      "parameters": {
+        "boardId": "23a598eb-da40-4b0d-8591-27383a97ec39",
+        "taskId": "f08e7a71-f755-4ae3-9ee0-9cda1d9fe63c"
+      },
+      "body": null
+    }
+    reqId: "req-l"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.07575000007636845
+    reqId: "req-l"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards/23a598eb-da40-4b0d-8591-27383a97ec39/tasks/9e7bb090-42fd-4ed0-8464-90ff17487b1a",
+      "path": "/boards/:boardId/tasks/:taskId",
+      "parameters": {
+        "boardId": "23a598eb-da40-4b0d-8591-27383a97ec39",
+        "taskId": "9e7bb090-42fd-4ed0-8464-90ff17487b1a"
+      },
+      "body": null
+    }
+    reqId: "req-m"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.0702080000191927
+    reqId: "req-m"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards/23a598eb-da40-4b0d-8591-27383a97ec39/tasks/5dd073ac-f8b4-4675-9516-19369979e7d9",
+      "path": "/boards/:boardId/tasks/:taskId",
+      "parameters": {
+        "boardId": "23a598eb-da40-4b0d-8591-27383a97ec39",
+        "taskId": "5dd073ac-f8b4-4675-9516-19369979e7d9"
+      },
+      "body": null
+    }
+    reqId: "req-n"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.06679199996870011
+    reqId: "req-n"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards/23a598eb-da40-4b0d-8591-27383a97ec39/tasks/008e87b7-20a9-4e51-9793-07edb633f1a8",
+      "path": "/boards/:boardId/tasks/:taskId",
+      "parameters": {
+        "boardId": "23a598eb-da40-4b0d-8591-27383a97ec39",
+        "taskId": "008e87b7-20a9-4e51-9793-07edb633f1a8"
+      },
+      "body": null
+    }
+    reqId: "req-o"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.06908299995120615
+    reqId: "req-o"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "DELETE",
+      "url": "/boards/23a598eb-da40-4b0d-8591-27383a97ec39",
+      "path": "/boards/:boardId",
+      "parameters": {
+        "boardId": "23a598eb-da40-4b0d-8591-27383a97ec39"
+      },
+      "body": null
+    }
+    reqId: "req-p"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.10041600000113249
+    reqId: "req-p"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards/23a598eb-da40-4b0d-8591-27383a97ec39/tasks/779a9c46-b809-46ba-9e05-f5d12db69ec8",
+      "path": "/boards/:boardId/tasks/:taskId",
+      "parameters": {
+        "boardId": "23a598eb-da40-4b0d-8591-27383a97ec39",
+        "taskId": "779a9c46-b809-46ba-9e05-f5d12db69ec8"
+      },
+      "body": null
+    }
+    reqId: "req-q"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 404
+    }
+    responseTime: 0.08187500003259629
+    reqId: "req-q"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards/23a598eb-da40-4b0d-8591-27383a97ec39/tasks/f08e7a71-f755-4ae3-9ee0-9cda1d9fe63c",
+      "path": "/boards/:boardId/tasks/:taskId",
+      "parameters": {
+        "boardId": "23a598eb-da40-4b0d-8591-27383a97ec39",
+        "taskId": "f08e7a71-f755-4ae3-9ee0-9cda1d9fe63c"
+      },
+      "body": null
+    }
+    reqId: "req-r"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 404
+    }
+    responseTime: 0.06291600002441555
+    reqId: "req-r"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards/23a598eb-da40-4b0d-8591-27383a97ec39/tasks/5dd073ac-f8b4-4675-9516-19369979e7d9",
+      "path": "/boards/:boardId/tasks/:taskId",
+      "parameters": {
+        "boardId": "23a598eb-da40-4b0d-8591-27383a97ec39",
+        "taskId": "5dd073ac-f8b4-4675-9516-19369979e7d9"
+      },
+      "body": null
+    }
+    reqId: "req-s"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 404
+    }
+    responseTime: 0.06387499999254942
+    reqId: "req-s"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards/23a598eb-da40-4b0d-8591-27383a97ec39/tasks/9e7bb090-42fd-4ed0-8464-90ff17487b1a",
+      "path": "/boards/:boardId/tasks/:taskId",
+      "parameters": {
+        "boardId": "23a598eb-da40-4b0d-8591-27383a97ec39",
+        "taskId": "9e7bb090-42fd-4ed0-8464-90ff17487b1a"
+      },
+      "body": null
+    }
+    reqId: "req-t"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 404
+    }
+    responseTime: 0.06145799998193979
+    reqId: "req-t"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards/23a598eb-da40-4b0d-8591-27383a97ec39/tasks/008e87b7-20a9-4e51-9793-07edb633f1a8",
+      "path": "/boards/:boardId/tasks/:taskId",
+      "parameters": {
+        "boardId": "23a598eb-da40-4b0d-8591-27383a97ec39",
+        "taskId": "008e87b7-20a9-4e51-9793-07edb633f1a8"
+      },
+      "body": null
+    }
+    reqId: "req-u"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 404
+    }
+    responseTime: 0.059874999918974936
+    reqId: "req-u"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "DELETE",
+      "url": "/boards/a2aa5670-f3e7-4b15-a2fc-85485c88e56e",
+      "path": "/boards/:boardId",
+      "parameters": {
+        "boardId": "a2aa5670-f3e7-4b15-a2fc-85485c88e56e"
+      },
+      "body": null
+    }
+    reqId: "req-v"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.07608300005085766
+    reqId: "req-v"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/users",
+      "path": "/users",
+      "parameters": {},
+      "body": null
+    }
+    reqId: "req-w"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.26591700001154095
+    reqId: "req-w"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "POST",
+      "url": "/users",
+      "path": "/users",
+      "parameters": {},
+      "body": null
+    }
+    reqId: "req-x"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 0.43616699997801334
+    reqId: "req-x"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/users/b7b93bf7-f0f1-45ae-94e7-04ef3ee71058",
+      "path": "/users/:userId",
+      "parameters": {
+        "userId": "b7b93bf7-f0f1-45ae-94e7-04ef3ee71058"
+      },
+      "body": null
+    }
+    reqId: "req-y"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.18383400002494454
+    reqId: "req-y"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "DELETE",
+      "url": "/users/b7b93bf7-f0f1-45ae-94e7-04ef3ee71058",
+      "path": "/users/:userId",
+      "parameters": {
+        "userId": "b7b93bf7-f0f1-45ae-94e7-04ef3ee71058"
+      },
+      "body": null
+    }
+    reqId: "req-z"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.16666700004134327
+    reqId: "req-z"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "POST",
+      "url": "/users",
+      "path": "/users",
+      "parameters": {},
+      "body": null
+    }
+    reqId: "req-10"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 0.12404200003948063
+    reqId: "req-10"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "DELETE",
+      "url": "/users/11e87c86-9ae2-486d-b128-e6e57113b3ea",
+      "path": "/users/:userId",
+      "parameters": {
+        "userId": "11e87c86-9ae2-486d-b128-e6e57113b3ea"
+      },
+      "body": null
+    }
+    reqId: "req-11"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.07937499997206032
+    reqId: "req-11"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "POST",
+      "url": "/users",
+      "path": "/users",
+      "parameters": {},
+      "body": null
+    }
+    reqId: "req-12"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 0.16849999991245568
+    reqId: "req-12"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "PUT",
+      "url": "/users/d5db803d-0a27-4893-884b-d1cbd7e2f44d",
+      "path": "/users/:userId",
+      "parameters": {
+        "userId": "d5db803d-0a27-4893-884b-d1cbd7e2f44d"
+      },
+      "body": null
+    }
+    reqId: "req-13"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.3206249999348074
+    reqId: "req-13"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/users/d5db803d-0a27-4893-884b-d1cbd7e2f44d",
+      "path": "/users/:userId",
+      "parameters": {
+        "userId": "d5db803d-0a27-4893-884b-d1cbd7e2f44d"
+      },
+      "body": null
+    }
+    reqId: "req-14"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.1325840000063181
+    reqId: "req-14"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "DELETE",
+      "url": "/users/d5db803d-0a27-4893-884b-d1cbd7e2f44d",
+      "path": "/users/:userId",
+      "parameters": {
+        "userId": "d5db803d-0a27-4893-884b-d1cbd7e2f44d"
+      },
+      "body": null
+    }
+    reqId: "req-15"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.11516699998173863
+    reqId: "req-15"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "POST",
+      "url": "/users",
+      "path": "/users",
+      "parameters": {},
+      "body": null
+    }
+    reqId: "req-16"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 0.1492500000167638
+    reqId: "req-16"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "DELETE",
+      "url": "/users/204a459b-7b69-4322-a45b-10af1a24b8da",
+      "path": "/users/:userId",
+      "parameters": {
+        "userId": "204a459b-7b69-4322-a45b-10af1a24b8da"
+      },
+      "body": null
+    }
+    reqId: "req-17"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.07429200003389269
+    reqId: "req-17"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "POST",
+      "url": "/users",
+      "path": "/users",
+      "parameters": {},
+      "body": null
+    }
+    reqId: "req-18"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 0.13049999997019768
+    reqId: "req-18"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "POST",
+      "url": "/boards",
+      "path": "/boards",
+      "parameters": {},
+      "body": null
+    }
+    reqId: "req-19"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 0.14104100002441555
+    reqId: "req-19"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "POST",
+      "url": "/boards/24927eae-94c3-48c0-b27e-a6011018c262/tasks",
+      "path": "/boards/:boardId/tasks",
+      "parameters": {
+        "boardId": "24927eae-94c3-48c0-b27e-a6011018c262"
+      },
+      "body": null
+    }
+    reqId: "req-1a"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 0.15000000002328306
+    reqId: "req-1a"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "POST",
+      "url": "/boards/24927eae-94c3-48c0-b27e-a6011018c262/tasks",
+      "path": "/boards/:boardId/tasks",
+      "parameters": {
+        "boardId": "24927eae-94c3-48c0-b27e-a6011018c262"
+      },
+      "body": null
+    }
+    reqId: "req-1b"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 0.12437500001396984
+    reqId: "req-1b"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "DELETE",
+      "url": "/users/79a1203f-fd3a-43f8-953f-34f6b15ee289",
+      "path": "/users/:userId",
+      "parameters": {
+        "userId": "79a1203f-fd3a-43f8-953f-34f6b15ee289"
+      },
+      "body": null
+    }
+    reqId: "req-1c"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.11570800002664328
+    reqId: "req-1c"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards/24927eae-94c3-48c0-b27e-a6011018c262/tasks/bad607e6-ce52-4f7f-af4e-48bc8cee0781",
+      "path": "/boards/:boardId/tasks/:taskId",
+      "parameters": {
+        "boardId": "24927eae-94c3-48c0-b27e-a6011018c262",
+        "taskId": "bad607e6-ce52-4f7f-af4e-48bc8cee0781"
+      },
+      "body": null
+    }
+    reqId: "req-1d"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.08008400001563132
+    reqId: "req-1d"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards/24927eae-94c3-48c0-b27e-a6011018c262/tasks/fd59b0ff-69ba-4aa3-a87a-7816227749ca",
+      "path": "/boards/:boardId/tasks/:taskId",
+      "parameters": {
+        "boardId": "24927eae-94c3-48c0-b27e-a6011018c262",
+        "taskId": "fd59b0ff-69ba-4aa3-a87a-7816227749ca"
+      },
+      "body": null
+    }
+    reqId: "req-1e"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.07299999997485429
+    reqId: "req-1e"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "DELETE",
+      "url": "/boards/24927eae-94c3-48c0-b27e-a6011018c262/tasks/bad607e6-ce52-4f7f-af4e-48bc8cee0781",
+      "path": "/boards/:boardId/tasks/:taskId",
+      "parameters": {
+        "boardId": "24927eae-94c3-48c0-b27e-a6011018c262",
+        "taskId": "bad607e6-ce52-4f7f-af4e-48bc8cee0781"
+      },
+      "body": null
+    }
+    reqId: "req-1f"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.13983300002291799
+    reqId: "req-1f"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "DELETE",
+      "url": "/boards/24927eae-94c3-48c0-b27e-a6011018c262/tasks/fd59b0ff-69ba-4aa3-a87a-7816227749ca",
+      "path": "/boards/:boardId/tasks/:taskId",
+      "parameters": {
+        "boardId": "24927eae-94c3-48c0-b27e-a6011018c262",
+        "taskId": "fd59b0ff-69ba-4aa3-a87a-7816227749ca"
+      },
+      "body": null
+    }
+    reqId: "req-1g"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.0577079999493435
+    reqId: "req-1g"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "DELETE",
+      "url": "/boards/24927eae-94c3-48c0-b27e-a6011018c262",
+      "path": "/boards/:boardId",
+      "parameters": {
+        "boardId": "24927eae-94c3-48c0-b27e-a6011018c262"
+      },
+      "body": null
+    }
+    reqId: "req-1h"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.06695799995213747
+    reqId: "req-1h"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "POST",
+      "url": "/boards",
+      "path": "/boards",
+      "parameters": {},
+      "body": null
+    }
+    reqId: "req-1i"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 0.19520799990277737
+    reqId: "req-1i"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "POST",
+      "url": "/boards/78d83ea3-74f7-431c-a531-5c05913b50f0/tasks",
+      "path": "/boards/:boardId/tasks",
+      "parameters": {
+        "boardId": "78d83ea3-74f7-431c-a531-5c05913b50f0"
+      },
+      "body": null
+    }
+    reqId: "req-1j"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 0.12554200005251914
+    reqId: "req-1j"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards/78d83ea3-74f7-431c-a531-5c05913b50f0/tasks",
+      "path": "/boards/:boardId/tasks",
+      "parameters": {
+        "boardId": "78d83ea3-74f7-431c-a531-5c05913b50f0"
+      },
+      "body": null
+    }
+    reqId: "req-1k"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.26462500006891787
+    reqId: "req-1k"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards/78d83ea3-74f7-431c-a531-5c05913b50f0/tasks",
+      "path": "/boards/:boardId/tasks",
+      "parameters": {
+        "boardId": "78d83ea3-74f7-431c-a531-5c05913b50f0"
+      },
+      "body": null
+    }
+    reqId: "req-1l"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.08112500002607703
+    reqId: "req-1l"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards/78d83ea3-74f7-431c-a531-5c05913b50f0/tasks/d18b472a-9183-4dbd-923b-0482200d4d69",
+      "path": "/boards/:boardId/tasks/:taskId",
+      "parameters": {
+        "boardId": "78d83ea3-74f7-431c-a531-5c05913b50f0",
+        "taskId": "d18b472a-9183-4dbd-923b-0482200d4d69"
+      },
+      "body": null
+    }
+    reqId: "req-1m"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.0857079999987036
+    reqId: "req-1m"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "POST",
+      "url": "/boards/78d83ea3-74f7-431c-a531-5c05913b50f0/tasks",
+      "path": "/boards/:boardId/tasks",
+      "parameters": {
+        "boardId": "78d83ea3-74f7-431c-a531-5c05913b50f0"
+      },
+      "body": null
+    }
+    reqId: "req-1n"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 0.12391600001137704
+    reqId: "req-1n"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "DELETE",
+      "url": "/boards/78d83ea3-74f7-431c-a531-5c05913b50f0/tasks/b66a7ee7-c8e5-413d-a170-0256d6e21d4c",
+      "path": "/boards/:boardId/tasks/:taskId",
+      "parameters": {
+        "boardId": "78d83ea3-74f7-431c-a531-5c05913b50f0",
+        "taskId": "b66a7ee7-c8e5-413d-a170-0256d6e21d4c"
+      },
+      "body": null
+    }
+    reqId: "req-1o"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.069958999985829
+    reqId: "req-1o"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "POST",
+      "url": "/boards/78d83ea3-74f7-431c-a531-5c05913b50f0/tasks",
+      "path": "/boards/:boardId/tasks",
+      "parameters": {
+        "boardId": "78d83ea3-74f7-431c-a531-5c05913b50f0"
+      },
+      "body": null
+    }
+    reqId: "req-1p"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 0.169209000072442
+    reqId: "req-1p"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "PUT",
+      "url": "/boards/78d83ea3-74f7-431c-a531-5c05913b50f0/tasks/17e2662e-6375-4de2-a4d1-4939138ce176",
+      "path": "/boards/:boardId/tasks/:taskId",
+      "parameters": {
+        "boardId": "78d83ea3-74f7-431c-a531-5c05913b50f0",
+        "taskId": "17e2662e-6375-4de2-a4d1-4939138ce176"
+      },
+      "body": null
+    }
+    reqId: "req-1q"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.2774170000338927
+    reqId: "req-1q"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards/78d83ea3-74f7-431c-a531-5c05913b50f0/tasks/17e2662e-6375-4de2-a4d1-4939138ce176",
+      "path": "/boards/:boardId/tasks/:taskId",
+      "parameters": {
+        "boardId": "78d83ea3-74f7-431c-a531-5c05913b50f0",
+        "taskId": "17e2662e-6375-4de2-a4d1-4939138ce176"
+      },
+      "body": null
+    }
+    reqId: "req-1r"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.0958329999120906
+    reqId: "req-1r"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards/78d83ea3-74f7-431c-a531-5c05913b50f0/tasks/d18b472a-9183-4dbd-923b-0482200d4d69",
+      "path": "/boards/:boardId/tasks/:taskId",
+      "parameters": {
+        "boardId": "78d83ea3-74f7-431c-a531-5c05913b50f0",
+        "taskId": "d18b472a-9183-4dbd-923b-0482200d4d69"
+      },
+      "body": null
+    }
+    reqId: "req-1s"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.11375000001862645
+    reqId: "req-1s"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "DELETE",
+      "url": "/boards/78d83ea3-74f7-431c-a531-5c05913b50f0/tasks/d18b472a-9183-4dbd-923b-0482200d4d69",
+      "path": "/boards/:boardId/tasks/:taskId",
+      "parameters": {
+        "boardId": "78d83ea3-74f7-431c-a531-5c05913b50f0",
+        "taskId": "d18b472a-9183-4dbd-923b-0482200d4d69"
+      },
+      "body": null
+    }
+    reqId: "req-1t"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.08704200002830476
+    reqId: "req-1t"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards/78d83ea3-74f7-431c-a531-5c05913b50f0/tasks/d18b472a-9183-4dbd-923b-0482200d4d69",
+      "path": "/boards/:boardId/tasks/:taskId",
+      "parameters": {
+        "boardId": "78d83ea3-74f7-431c-a531-5c05913b50f0",
+        "taskId": "d18b472a-9183-4dbd-923b-0482200d4d69"
+      },
+      "body": null
+    }
+    reqId: "req-1u"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 404
+    }
+    responseTime: 0.11191700003109872
+    reqId: "req-1u"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "DELETE",
+      "url": "/boards/78d83ea3-74f7-431c-a531-5c05913b50f0",
+      "path": "/boards/:boardId",
+      "parameters": {
+        "boardId": "78d83ea3-74f7-431c-a531-5c05913b50f0"
+      },
+      "body": null
+    }
+    reqId: "req-1v"
+[32mINFO[39m [2021-26-12, 9:06:57 AM] (2497 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.07712499995250255
+    reqId: "req-1v"
+[32mINFO[39m [2021-26-12, 9:07:19 AM] (2545 on MacBook-Air-Anastasiya.local): [36mServer listening at http://127.0.0.1:4000[39m
+[32mINFO[39m [2021-26-12, 9:07:24 AM] (2567 on MacBook-Air-Anastasiya.local): [36mServer listening at http://127.0.0.1:4000[39m
+[32mINFO[39m [2021-26-12, 9:07:26 AM] (2583 on MacBook-Air-Anastasiya.local): [36mServer listening at http://127.0.0.1:4000[39m
+[32mINFO[39m [2021-26-12, 9:07:29 AM] (2598 on MacBook-Air-Anastasiya.local): [36mServer listening at http://127.0.0.1:4000[39m
+[32mINFO[39m [2021-26-12, 9:08:09 AM] (2614 on MacBook-Air-Anastasiya.local): [36mServer listening at http://127.0.0.1:4000[39m
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "POST",
+      "url": "/boards",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49501
+    }
+    reqId: "req-1"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 3.0324999999720603
+    reqId: "req-1"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49502
+    }
+    reqId: "req-2"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.311790999956429
+    reqId: "req-2"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49503
+    }
+    reqId: "req-3"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.12587500002700835
+    reqId: "req-3"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards/eef1ad1d-509e-4554-bd07-5df5a0d10a24",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49504
+    }
+    reqId: "req-4"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.2503329999744892
+    reqId: "req-4"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "POST",
+      "url": "/boards",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49505
+    }
+    reqId: "req-5"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 0.4715420000720769
+    reqId: "req-5"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "DELETE",
+      "url": "/boards/06b21cf8-f928-4134-889d-9f7a88372874",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49506
+    }
+    reqId: "req-6"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.17729200003668666
+    reqId: "req-6"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "POST",
+      "url": "/boards",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49507
+    }
+    reqId: "req-7"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 0.15979199996218085
+    reqId: "req-7"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "PUT",
+      "url": "/boards/a5db2553-6ec4-4d0b-bf57-43b35f9cbf6f",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49508
+    }
+    reqId: "req-8"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.24666699999943376
+    reqId: "req-8"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards/a5db2553-6ec4-4d0b-bf57-43b35f9cbf6f",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49509
+    }
+    reqId: "req-9"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.08566600002814084
+    reqId: "req-9"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "DELETE",
+      "url": "/boards/a5db2553-6ec4-4d0b-bf57-43b35f9cbf6f",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49510
+    }
+    reqId: "req-a"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.10750000004190952
+    reqId: "req-a"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "POST",
+      "url": "/boards",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49511
+    }
+    reqId: "req-b"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 0.16670900001190603
+    reqId: "req-b"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "DELETE",
+      "url": "/boards/79ba29ea-db77-44fb-8458-187ff352158d",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49512
+    }
+    reqId: "req-c"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.0975839999737218
+    reqId: "req-c"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards/79ba29ea-db77-44fb-8458-187ff352158d",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49513
+    }
+    reqId: "req-d"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 404
+    }
+    responseTime: 0.11112499993760139
+    reqId: "req-d"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "POST",
+      "url": "/boards",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49514
+    }
+    reqId: "req-e"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 0.22395800007507205
+    reqId: "req-e"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "POST",
+      "url": "/boards/14aa4460-2753-4e48-b5c3-856ef54348db/tasks",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49515
+    }
+    reqId: "req-f"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 0.467958000022918
+    reqId: "req-f"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "POST",
+      "url": "/boards/14aa4460-2753-4e48-b5c3-856ef54348db/tasks",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49516
+    }
+    reqId: "req-g"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 0.13795799994841218
+    reqId: "req-g"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "POST",
+      "url": "/boards/14aa4460-2753-4e48-b5c3-856ef54348db/tasks",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49517
+    }
+    reqId: "req-h"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 0.11462499992921948
+    reqId: "req-h"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "POST",
+      "url": "/boards/14aa4460-2753-4e48-b5c3-856ef54348db/tasks",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49518
+    }
+    reqId: "req-i"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 0.1092499999795109
+    reqId: "req-i"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "POST",
+      "url": "/boards/14aa4460-2753-4e48-b5c3-856ef54348db/tasks",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49519
+    }
+    reqId: "req-j"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 0.12170899996999651
+    reqId: "req-j"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards/14aa4460-2753-4e48-b5c3-856ef54348db/tasks/352bee54-e6cb-440b-82e3-79b403a8f72d",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49520
+    }
+    reqId: "req-k"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.2848750000121072
+    reqId: "req-k"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards/14aa4460-2753-4e48-b5c3-856ef54348db/tasks/c5102b32-87cb-4426-a7c0-e76a6f6058c2",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49521
+    }
+    reqId: "req-l"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.07304100005421788
+    reqId: "req-l"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards/14aa4460-2753-4e48-b5c3-856ef54348db/tasks/7cb5fede-7176-40eb-b7f4-b7f425c75590",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49522
+    }
+    reqId: "req-m"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.0627500000409782
+    reqId: "req-m"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards/14aa4460-2753-4e48-b5c3-856ef54348db/tasks/d631592c-bbc0-4d8a-ac15-4693bea791b0",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49523
+    }
+    reqId: "req-n"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.06979199999477714
+    reqId: "req-n"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards/14aa4460-2753-4e48-b5c3-856ef54348db/tasks/ad7286e0-5f3e-4227-9df6-a8010dd96dc6",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49524
+    }
+    reqId: "req-o"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.07258300005923957
+    reqId: "req-o"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "DELETE",
+      "url": "/boards/14aa4460-2753-4e48-b5c3-856ef54348db",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49525
+    }
+    reqId: "req-p"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.07904199999757111
+    reqId: "req-p"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards/14aa4460-2753-4e48-b5c3-856ef54348db/tasks/352bee54-e6cb-440b-82e3-79b403a8f72d",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49526
+    }
+    reqId: "req-q"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 404
+    }
+    responseTime: 0.0890829999698326
+    reqId: "req-q"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards/14aa4460-2753-4e48-b5c3-856ef54348db/tasks/c5102b32-87cb-4426-a7c0-e76a6f6058c2",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49527
+    }
+    reqId: "req-r"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 404
+    }
+    responseTime: 0.07104199996683747
+    reqId: "req-r"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards/14aa4460-2753-4e48-b5c3-856ef54348db/tasks/d631592c-bbc0-4d8a-ac15-4693bea791b0",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49528
+    }
+    reqId: "req-s"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 404
+    }
+    responseTime: 0.07087499997578561
+    reqId: "req-s"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards/14aa4460-2753-4e48-b5c3-856ef54348db/tasks/7cb5fede-7176-40eb-b7f4-b7f425c75590",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49529
+    }
+    reqId: "req-t"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 404
+    }
+    responseTime: 0.06704100000206381
+    reqId: "req-t"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards/14aa4460-2753-4e48-b5c3-856ef54348db/tasks/ad7286e0-5f3e-4227-9df6-a8010dd96dc6",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49530
+    }
+    reqId: "req-u"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 404
+    }
+    responseTime: 0.061375000048428774
+    reqId: "req-u"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "DELETE",
+      "url": "/boards/eef1ad1d-509e-4554-bd07-5df5a0d10a24",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49531
+    }
+    reqId: "req-v"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.08779200003482401
+    reqId: "req-v"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/users",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49532
+    }
+    reqId: "req-w"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.28608400002121925
+    reqId: "req-w"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "POST",
+      "url": "/users",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49533
+    }
+    reqId: "req-x"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 0.4792910000542179
+    reqId: "req-x"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/users/da768194-076e-4f84-a4d0-d7c2af7db262",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49534
+    }
+    reqId: "req-y"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.7022919999435544
+    reqId: "req-y"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "DELETE",
+      "url": "/users/da768194-076e-4f84-a4d0-d7c2af7db262",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49535
+    }
+    reqId: "req-z"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.3620840000221506
+    reqId: "req-z"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "POST",
+      "url": "/users",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49536
+    }
+    reqId: "req-10"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 0.17637500003911555
+    reqId: "req-10"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "DELETE",
+      "url": "/users/d4e0b952-6221-4bcb-b9cf-dd4637430192",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49537
+    }
+    reqId: "req-11"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.07916700001806021
+    reqId: "req-11"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "POST",
+      "url": "/users",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49538
+    }
+    reqId: "req-12"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 0.14566599996760488
+    reqId: "req-12"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "PUT",
+      "url": "/users/8b2b376f-03e3-4f98-a720-ac6aae32038e",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49539
+    }
+    reqId: "req-13"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.26779199996963143
+    reqId: "req-13"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/users/8b2b376f-03e3-4f98-a720-ac6aae32038e",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49540
+    }
+    reqId: "req-14"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.0860419999808073
+    reqId: "req-14"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "DELETE",
+      "url": "/users/8b2b376f-03e3-4f98-a720-ac6aae32038e",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49541
+    }
+    reqId: "req-15"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.07695900008548051
+    reqId: "req-15"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "POST",
+      "url": "/users",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49542
+    }
+    reqId: "req-16"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 0.13379200000781566
+    reqId: "req-16"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "DELETE",
+      "url": "/users/58d0fbe6-b733-40f7-b37e-75ef1a3f0d46",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49543
+    }
+    reqId: "req-17"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.08070799999404699
+    reqId: "req-17"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "POST",
+      "url": "/users",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49544
+    }
+    reqId: "req-18"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 0.1915830000070855
+    reqId: "req-18"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "POST",
+      "url": "/boards",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49545
+    }
+    reqId: "req-19"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 0.19991600001230836
+    reqId: "req-19"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "POST",
+      "url": "/boards/5d63af86-2571-4bbb-816a-914344582543/tasks",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49546
+    }
+    reqId: "req-1a"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 0.14916599995922297
+    reqId: "req-1a"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "POST",
+      "url": "/boards/5d63af86-2571-4bbb-816a-914344582543/tasks",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49547
+    }
+    reqId: "req-1b"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 0.11824999994132668
+    reqId: "req-1b"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "DELETE",
+      "url": "/users/defca892-1d9d-47c3-957d-cdf7f2c0c5fe",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49548
+    }
+    reqId: "req-1c"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.12050000007729977
+    reqId: "req-1c"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards/5d63af86-2571-4bbb-816a-914344582543/tasks/b23c2e16-a81b-40f3-a988-f18f702be257",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49549
+    }
+    reqId: "req-1d"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.08116699999663979
+    reqId: "req-1d"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards/5d63af86-2571-4bbb-816a-914344582543/tasks/844fd6a5-941c-4633-a03a-c6c2940570f6",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49550
+    }
+    reqId: "req-1e"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.07854200003203005
+    reqId: "req-1e"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "DELETE",
+      "url": "/boards/5d63af86-2571-4bbb-816a-914344582543/tasks/b23c2e16-a81b-40f3-a988-f18f702be257",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49551
+    }
+    reqId: "req-1f"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.14229200000409037
+    reqId: "req-1f"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "DELETE",
+      "url": "/boards/5d63af86-2571-4bbb-816a-914344582543/tasks/844fd6a5-941c-4633-a03a-c6c2940570f6",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49552
+    }
+    reqId: "req-1g"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.059874999918974936
+    reqId: "req-1g"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "DELETE",
+      "url": "/boards/5d63af86-2571-4bbb-816a-914344582543",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49553
+    }
+    reqId: "req-1h"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.07029200007673353
+    reqId: "req-1h"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "POST",
+      "url": "/boards",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49554
+    }
+    reqId: "req-1i"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 0.19712499994784594
+    reqId: "req-1i"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "POST",
+      "url": "/boards/1cf182cd-7818-4c0a-936b-86983982e2f5/tasks",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49555
+    }
+    reqId: "req-1j"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 0.12366599997039884
+    reqId: "req-1j"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards/1cf182cd-7818-4c0a-936b-86983982e2f5/tasks",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49556
+    }
+    reqId: "req-1k"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.42670900002121925
+    reqId: "req-1k"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards/1cf182cd-7818-4c0a-936b-86983982e2f5/tasks",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49557
+    }
+    reqId: "req-1l"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.09529199998360127
+    reqId: "req-1l"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards/1cf182cd-7818-4c0a-936b-86983982e2f5/tasks/e52d5c70-dc60-4503-9424-1f58f8fa70d0",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49558
+    }
+    reqId: "req-1m"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.09491699992213398
+    reqId: "req-1m"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "POST",
+      "url": "/boards/1cf182cd-7818-4c0a-936b-86983982e2f5/tasks",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49559
+    }
+    reqId: "req-1n"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 0.1471659999806434
+    reqId: "req-1n"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "DELETE",
+      "url": "/boards/1cf182cd-7818-4c0a-936b-86983982e2f5/tasks/589df158-ab89-41b7-98b4-82fed9e608a3",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49560
+    }
+    reqId: "req-1o"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.07062500005122274
+    reqId: "req-1o"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "POST",
+      "url": "/boards/1cf182cd-7818-4c0a-936b-86983982e2f5/tasks",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49561
+    }
+    reqId: "req-1p"
+[32mINFO[39m [2021-26-12, 9:08:12 AM] (2614 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 0.1524170000338927
+    reqId: "req-1p"
+[32mINFO[39m [2021-26-12, 9:08:13 AM] (2614 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "PUT",
+      "url": "/boards/1cf182cd-7818-4c0a-936b-86983982e2f5/tasks/9fdee3cd-efc5-44d7-b00d-d4fbda0940b6",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49562
+    }
+    reqId: "req-1q"
+[32mINFO[39m [2021-26-12, 9:08:13 AM] (2614 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.2440419999184087
+    reqId: "req-1q"
+[32mINFO[39m [2021-26-12, 9:08:13 AM] (2614 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards/1cf182cd-7818-4c0a-936b-86983982e2f5/tasks/9fdee3cd-efc5-44d7-b00d-d4fbda0940b6",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49563
+    }
+    reqId: "req-1r"
+[32mINFO[39m [2021-26-12, 9:08:13 AM] (2614 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.08349999994970858
+    reqId: "req-1r"
+[32mINFO[39m [2021-26-12, 9:08:13 AM] (2614 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards/1cf182cd-7818-4c0a-936b-86983982e2f5/tasks/e52d5c70-dc60-4503-9424-1f58f8fa70d0",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49564
+    }
+    reqId: "req-1s"
+[32mINFO[39m [2021-26-12, 9:08:13 AM] (2614 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.08445900003425777
+    reqId: "req-1s"
+[32mINFO[39m [2021-26-12, 9:08:13 AM] (2614 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "DELETE",
+      "url": "/boards/1cf182cd-7818-4c0a-936b-86983982e2f5/tasks/e52d5c70-dc60-4503-9424-1f58f8fa70d0",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49565
+    }
+    reqId: "req-1t"
+[32mINFO[39m [2021-26-12, 9:08:13 AM] (2614 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.0897920000134036
+    reqId: "req-1t"
+[32mINFO[39m [2021-26-12, 9:08:13 AM] (2614 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards/1cf182cd-7818-4c0a-936b-86983982e2f5/tasks/e52d5c70-dc60-4503-9424-1f58f8fa70d0",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49566
+    }
+    reqId: "req-1u"
+[32mINFO[39m [2021-26-12, 9:08:13 AM] (2614 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 404
+    }
+    responseTime: 0.10633300000336021
+    reqId: "req-1u"
+[32mINFO[39m [2021-26-12, 9:08:13 AM] (2614 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "DELETE",
+      "url": "/boards/1cf182cd-7818-4c0a-936b-86983982e2f5",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49567
+    }
+    reqId: "req-1v"
+[32mINFO[39m [2021-26-12, 9:08:13 AM] (2614 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.1054160000057891
+    reqId: "req-1v"
+[32mINFO[39m [2021-26-12, 9:08:24 AM] (2647 on MacBook-Air-Anastasiya.local): [36mServer listening at http://127.0.0.1:4000[39m
+[32mINFO[39m [2021-26-12, 9:08:28 AM] (2647 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "POST",
+      "url": "/boards",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49569
+    }
+    reqId: "req-1"
+[32mINFO[39m [2021-26-12, 9:08:28 AM] (2647 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 3.210499999928288
+    reqId: "req-1"
+[32mINFO[39m [2021-26-12, 9:08:28 AM] (2647 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49570
+    }
+    reqId: "req-2"
+[32mINFO[39m [2021-26-12, 9:08:28 AM] (2647 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.32433400000445545
+    reqId: "req-2"
+[32mINFO[39m [2021-26-12, 9:08:28 AM] (2647 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49571
+    }
+    reqId: "req-3"
+[32mINFO[39m [2021-26-12, 9:08:28 AM] (2647 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.12595799996051937
+    reqId: "req-3"
+[32mINFO[39m [2021-26-12, 9:08:28 AM] (2647 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards/03752815-c759-400d-820d-fb2f72cd976f",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49572
+    }
+    reqId: "req-4"
+[32mINFO[39m [2021-26-12, 9:08:28 AM] (2647 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.2415000000037253
+    reqId: "req-4"
+[32mINFO[39m [2021-26-12, 9:08:28 AM] (2647 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "POST",
+      "url": "/boards",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49573
+    }
+    reqId: "req-5"
+[32mINFO[39m [2021-26-12, 9:08:28 AM] (2647 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 0.5142080000368878
+    reqId: "req-5"
+[32mINFO[39m [2021-26-12, 9:08:28 AM] (2647 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "DELETE",
+      "url": "/boards/035a1817-3ad4-4fb8-804b-9855b32d975f",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49574
+    }
+    reqId: "req-6"
+[32mINFO[39m [2021-26-12, 9:08:28 AM] (2647 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.1738750000949949
+    reqId: "req-6"
+[32mINFO[39m [2021-26-12, 9:08:28 AM] (2647 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "POST",
+      "url": "/boards",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49575
+    }
+    reqId: "req-7"
+[32mINFO[39m [2021-26-12, 9:08:28 AM] (2647 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 0.16458300000522286
+    reqId: "req-7"
+[32mINFO[39m [2021-26-12, 9:08:28 AM] (2647 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "PUT",
+      "url": "/boards/2fb8fd52-b460-4aad-b8f5-ba9ff487d5c1",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49576
+    }
+    reqId: "req-8"
+[32mINFO[39m [2021-26-12, 9:08:28 AM] (2647 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.275666999979876
+    reqId: "req-8"
+[32mINFO[39m [2021-26-12, 9:08:28 AM] (2647 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards/2fb8fd52-b460-4aad-b8f5-ba9ff487d5c1",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49577
+    }
+    reqId: "req-9"
+[32mINFO[39m [2021-26-12, 9:08:28 AM] (2647 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.09220800001639873
+    reqId: "req-9"
+[32mINFO[39m [2021-26-12, 9:08:28 AM] (2647 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "DELETE",
+      "url": "/boards/2fb8fd52-b460-4aad-b8f5-ba9ff487d5c1",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49578
+    }
+    reqId: "req-a"
+[32mINFO[39m [2021-26-12, 9:08:28 AM] (2647 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.09100000001490116
+    reqId: "req-a"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "POST",
+      "url": "/boards",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49579
+    }
+    reqId: "req-b"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 0.15045800001826137
+    reqId: "req-b"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "DELETE",
+      "url": "/boards/dacd2f07-8e3c-4a02-8fe9-c78ee9e1a70c",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49580
+    }
+    reqId: "req-c"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.09962500003166497
+    reqId: "req-c"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards/dacd2f07-8e3c-4a02-8fe9-c78ee9e1a70c",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49581
+    }
+    reqId: "req-d"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 404
+    }
+    responseTime: 0.09504199994262308
+    reqId: "req-d"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "POST",
+      "url": "/boards",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49582
+    }
+    reqId: "req-e"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 0.1475839999038726
+    reqId: "req-e"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "POST",
+      "url": "/boards/3aca4e64-3627-4dfd-b112-9224c1245fc8/tasks",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49583
+    }
+    reqId: "req-f"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 0.5008329999400303
+    reqId: "req-f"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "POST",
+      "url": "/boards/3aca4e64-3627-4dfd-b112-9224c1245fc8/tasks",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49584
+    }
+    reqId: "req-g"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 0.1638329999987036
+    reqId: "req-g"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "POST",
+      "url": "/boards/3aca4e64-3627-4dfd-b112-9224c1245fc8/tasks",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49585
+    }
+    reqId: "req-h"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 0.13787500001490116
+    reqId: "req-h"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "POST",
+      "url": "/boards/3aca4e64-3627-4dfd-b112-9224c1245fc8/tasks",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49586
+    }
+    reqId: "req-i"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 0.11349999997764826
+    reqId: "req-i"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "POST",
+      "url": "/boards/3aca4e64-3627-4dfd-b112-9224c1245fc8/tasks",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49587
+    }
+    reqId: "req-j"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 0.13066699996124953
+    reqId: "req-j"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards/3aca4e64-3627-4dfd-b112-9224c1245fc8/tasks/5e7b4190-a6ff-4a91-8684-edeb0cb5f62c",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49588
+    }
+    reqId: "req-k"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.275666999979876
+    reqId: "req-k"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards/3aca4e64-3627-4dfd-b112-9224c1245fc8/tasks/e4bacd91-8145-4e89-8474-ee43c310db79",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49589
+    }
+    reqId: "req-l"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.07708399998955429
+    reqId: "req-l"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards/3aca4e64-3627-4dfd-b112-9224c1245fc8/tasks/0703cb54-763d-4b57-8704-90bec20ef2fc",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49590
+    }
+    reqId: "req-m"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.0741660000057891
+    reqId: "req-m"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards/3aca4e64-3627-4dfd-b112-9224c1245fc8/tasks/77c41429-bc47-4b4d-80bb-de5bae6fdae3",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49591
+    }
+    reqId: "req-n"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.06687500001862645
+    reqId: "req-n"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards/3aca4e64-3627-4dfd-b112-9224c1245fc8/tasks/e4b27d14-2211-4df5-9f82-95cb44af2b5b",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49592
+    }
+    reqId: "req-o"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.06729099992662668
+    reqId: "req-o"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "DELETE",
+      "url": "/boards/3aca4e64-3627-4dfd-b112-9224c1245fc8",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49593
+    }
+    reqId: "req-p"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.09741699998266995
+    reqId: "req-p"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards/3aca4e64-3627-4dfd-b112-9224c1245fc8/tasks/5e7b4190-a6ff-4a91-8684-edeb0cb5f62c",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49594
+    }
+    reqId: "req-q"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 404
+    }
+    responseTime: 0.08079100004397333
+    reqId: "req-q"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards/3aca4e64-3627-4dfd-b112-9224c1245fc8/tasks/0703cb54-763d-4b57-8704-90bec20ef2fc",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49595
+    }
+    reqId: "req-r"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 404
+    }
+    responseTime: 0.06508299999404699
+    reqId: "req-r"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards/3aca4e64-3627-4dfd-b112-9224c1245fc8/tasks/77c41429-bc47-4b4d-80bb-de5bae6fdae3",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49596
+    }
+    reqId: "req-s"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 404
+    }
+    responseTime: 0.06141699990257621
+    reqId: "req-s"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards/3aca4e64-3627-4dfd-b112-9224c1245fc8/tasks/e4bacd91-8145-4e89-8474-ee43c310db79",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49597
+    }
+    reqId: "req-t"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 404
+    }
+    responseTime: 0.06016700004693121
+    reqId: "req-t"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards/3aca4e64-3627-4dfd-b112-9224c1245fc8/tasks/e4b27d14-2211-4df5-9f82-95cb44af2b5b",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49598
+    }
+    reqId: "req-u"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 404
+    }
+    responseTime: 0.061916999984532595
+    reqId: "req-u"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "DELETE",
+      "url": "/boards/03752815-c759-400d-820d-fb2f72cd976f",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49599
+    }
+    reqId: "req-v"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.06858299998566508
+    reqId: "req-v"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/users",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49600
+    }
+    reqId: "req-w"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.2778749999124557
+    reqId: "req-w"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "POST",
+      "url": "/users",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49601
+    }
+    reqId: "req-x"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 0.4807499999878928
+    reqId: "req-x"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/users/ece10565-a48d-4836-8c05-1b2968ca46cf",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49602
+    }
+    reqId: "req-y"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.20574999996460974
+    reqId: "req-y"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "DELETE",
+      "url": "/users/ece10565-a48d-4836-8c05-1b2968ca46cf",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49603
+    }
+    reqId: "req-z"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.1915830000070855
+    reqId: "req-z"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "POST",
+      "url": "/users",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49604
+    }
+    reqId: "req-10"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 0.4470829999772832
+    reqId: "req-10"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "DELETE",
+      "url": "/users/102b95de-c413-4d7e-9951-7e47bdfb83ed",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49605
+    }
+    reqId: "req-11"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.14362500002607703
+    reqId: "req-11"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "POST",
+      "url": "/users",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49606
+    }
+    reqId: "req-12"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 0.18500000005587935
+    reqId: "req-12"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "PUT",
+      "url": "/users/3fd4904b-3d46-4f5f-a662-7eb7482ec86f",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49607
+    }
+    reqId: "req-13"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.26616600004490465
+    reqId: "req-13"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/users/3fd4904b-3d46-4f5f-a662-7eb7482ec86f",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49608
+    }
+    reqId: "req-14"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.07437499996740371
+    reqId: "req-14"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "DELETE",
+      "url": "/users/3fd4904b-3d46-4f5f-a662-7eb7482ec86f",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49609
+    }
+    reqId: "req-15"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.07466699997894466
+    reqId: "req-15"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "POST",
+      "url": "/users",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49610
+    }
+    reqId: "req-16"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 0.14995899994391948
+    reqId: "req-16"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "DELETE",
+      "url": "/users/5c65615f-91a8-4ff6-831f-ad69022c8c44",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49611
+    }
+    reqId: "req-17"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.08183400006964803
+    reqId: "req-17"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "POST",
+      "url": "/users",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49612
+    }
+    reqId: "req-18"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 0.17270799994003028
+    reqId: "req-18"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "POST",
+      "url": "/boards",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49613
+    }
+    reqId: "req-19"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 0.16099999996367842
+    reqId: "req-19"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "POST",
+      "url": "/boards/023d3648-5d98-4913-bc51-3b62105b5875/tasks",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49614
+    }
+    reqId: "req-1a"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 0.14620800002012402
+    reqId: "req-1a"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "POST",
+      "url": "/boards/023d3648-5d98-4913-bc51-3b62105b5875/tasks",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49615
+    }
+    reqId: "req-1b"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 0.11304199998266995
+    reqId: "req-1b"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "DELETE",
+      "url": "/users/5d1a23e3-96fe-495f-b57e-e499d64cfb1c",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49616
+    }
+    reqId: "req-1c"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.12412499997299165
+    reqId: "req-1c"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards/023d3648-5d98-4913-bc51-3b62105b5875/tasks/4d261c1e-6014-4c65-899b-c037f88a1dad",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49617
+    }
+    reqId: "req-1d"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.08845800010021776
+    reqId: "req-1d"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards/023d3648-5d98-4913-bc51-3b62105b5875/tasks/7bb8b183-f9e3-45b5-b84e-c154ae3a013d",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49618
+    }
+    reqId: "req-1e"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.11033399996813387
+    reqId: "req-1e"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "DELETE",
+      "url": "/boards/023d3648-5d98-4913-bc51-3b62105b5875/tasks/4d261c1e-6014-4c65-899b-c037f88a1dad",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49619
+    }
+    reqId: "req-1f"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.14699999999720603
+    reqId: "req-1f"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "DELETE",
+      "url": "/boards/023d3648-5d98-4913-bc51-3b62105b5875/tasks/7bb8b183-f9e3-45b5-b84e-c154ae3a013d",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49620
+    }
+    reqId: "req-1g"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.059917000005953014
+    reqId: "req-1g"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "DELETE",
+      "url": "/boards/023d3648-5d98-4913-bc51-3b62105b5875",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49621
+    }
+    reqId: "req-1h"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.07541599997784942
+    reqId: "req-1h"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "POST",
+      "url": "/boards",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49622
+    }
+    reqId: "req-1i"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 0.19254199997521937
+    reqId: "req-1i"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "POST",
+      "url": "/boards/22b1bfd8-3821-471a-b5d4-427ffb1268db/tasks",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49623
+    }
+    reqId: "req-1j"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 0.12400000006891787
+    reqId: "req-1j"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards/22b1bfd8-3821-471a-b5d4-427ffb1268db/tasks",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49624
+    }
+    reqId: "req-1k"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.26800000004004687
+    reqId: "req-1k"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards/22b1bfd8-3821-471a-b5d4-427ffb1268db/tasks",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49625
+    }
+    reqId: "req-1l"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.08249999990221113
+    reqId: "req-1l"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards/22b1bfd8-3821-471a-b5d4-427ffb1268db/tasks/c0d23552-51eb-47f0-9bb5-c5376404fe2d",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49626
+    }
+    reqId: "req-1m"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.09687500004656613
+    reqId: "req-1m"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "POST",
+      "url": "/boards/22b1bfd8-3821-471a-b5d4-427ffb1268db/tasks",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49627
+    }
+    reqId: "req-1n"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 0.15441600000485778
+    reqId: "req-1n"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "DELETE",
+      "url": "/boards/22b1bfd8-3821-471a-b5d4-427ffb1268db/tasks/646df9e3-24a4-48bc-a0da-4c25c31f574e",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49628
+    }
+    reqId: "req-1o"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.13566699996590614
+    reqId: "req-1o"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "POST",
+      "url": "/boards/22b1bfd8-3821-471a-b5d4-427ffb1268db/tasks",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49629
+    }
+    reqId: "req-1p"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 0.14070900005754083
+    reqId: "req-1p"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "PUT",
+      "url": "/boards/22b1bfd8-3821-471a-b5d4-427ffb1268db/tasks/55dd0b56-ef88-4a23-92bd-9e1f1abce526",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49630
+    }
+    reqId: "req-1q"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.240667000063695
+    reqId: "req-1q"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards/22b1bfd8-3821-471a-b5d4-427ffb1268db/tasks/55dd0b56-ef88-4a23-92bd-9e1f1abce526",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49631
+    }
+    reqId: "req-1r"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.07154200004879385
+    reqId: "req-1r"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards/22b1bfd8-3821-471a-b5d4-427ffb1268db/tasks/c0d23552-51eb-47f0-9bb5-c5376404fe2d",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49632
+    }
+    reqId: "req-1s"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.07683399994857609
+    reqId: "req-1s"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "DELETE",
+      "url": "/boards/22b1bfd8-3821-471a-b5d4-427ffb1268db/tasks/c0d23552-51eb-47f0-9bb5-c5376404fe2d",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49633
+    }
+    reqId: "req-1t"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.06466600007843226
+    reqId: "req-1t"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "GET",
+      "url": "/boards/22b1bfd8-3821-471a-b5d4-427ffb1268db/tasks/c0d23552-51eb-47f0-9bb5-c5376404fe2d",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49634
+    }
+    reqId: "req-1u"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 404
+    }
+    responseTime: 0.07920899998862296
+    reqId: "req-1u"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mincoming request[39m
+    req: {
+      "method": "DELETE",
+      "url": "/boards/22b1bfd8-3821-471a-b5d4-427ffb1268db",
+      "hostname": "localhost:4000",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 49635
+    }
+    reqId: "req-1v"
+[32mINFO[39m [2021-26-12, 9:08:29 AM] (2647 on MacBook-Air-Anastasiya.local): [36mrequest completed[39m
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.07062499993480742
+    reqId: "req-1v"
+[32mINFO[39m [2021-26-12, 9:08:40 AM] (2680 on MacBook-Air-Anastasiya.local): [36mServer listening at http://127.0.0.1:4000[39m
+[32mINFO[39m [2021-26-12, 9:08:46 AM] (2696 on MacBook-Air-Anastasiya.local): [36mServer listening at http://127.0.0.1:4000[39m
+[32mINFO[39m [2021-26-12, 9:08:55 AM] (2712 on MacBook-Air-Anastasiya.local): [36mServer listening at http://127.0.0.1:4000[39m
+[32mINFO[39m [2021-26-12, 9:08:57 AM] (2728 on MacBook-Air-Anastasiya.local): [36mServer listening at http://127.0.0.1:4000[39m
+{"level":30,"time":1640509778375,"pid":2807,"hostname":"MacBook-Air-Anastasiya.local","msg":"Server listening at http://127.0.0.1:4000"}
+[1640509781691] [32mINFO[39m (2830 on MacBook-Air-Anastasiya.local): [36mServer listening at http://127.0.0.1:4000[39m
+[1640509784642] [32mINFO[39m (2850 on MacBook-Air-Anastasiya.local): [36mServer listening at http://127.0.0.1:4000[39m
+[1640509849110] [32mINFO[39m (2904 on MacBook-Air-Anastasiya.local): [36mServer listening at http://127.0.0.1:4000[39m
